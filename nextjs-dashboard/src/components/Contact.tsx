@@ -5,10 +5,20 @@ const Contact = () => {
 
 
     return (
-        <nav>
-            
-
-        </nav>
+        <div id='contact'>
+            <form>
+                <label>Name</label>
+                <input />
+                <label>Email</label>
+                <input />
+                <label>Subject</label>
+                <input />
+                <label>Message</label>
+                <input />
+            </form>
+           
+      
+        </div>
         
     )
 

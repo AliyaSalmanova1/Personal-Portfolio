@@ -6,8 +6,8 @@ const About = () => {
 
 
     return (
-        <div className="">
-            <h3 className="text-3xl font-semibold">A little about me </h3>
+        <div id="about" className="max-w-[900px] text-center mx-auto md:h-screen">
+            <h3 className="text-3xl font-bold uppercase">A little about me </h3>
             <br/>
             <p>When I took my first coding class during my studies at NYU University, I immediately fell in love with it. 
                 Before that I envisioned myself pursuing a career in music, writing compositions for television. 

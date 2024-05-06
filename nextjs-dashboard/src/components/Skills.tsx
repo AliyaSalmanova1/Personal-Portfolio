@@ -24,7 +24,14 @@ const Skills = () => {
         {technology: "Bootstrap",
         icon: "/skillsIcons/bootstrap.png"},
         {technology: "CSS",
-        icon: "/skillsIcons/cssIcon.png"}
+        icon: "/skillsIcons/cssIcon.png"},
+        {technology: "PostgreSQL",
+        icon: "/skillsIcons/postgreSQLIcon.png"},
+        {technology: "Firebase",
+        icon: "/skillsIcons/firebaseIcon.png"},
+        {technology: "MongoDB",
+        icon: "/skillsIcons/mongoDBIcon.png"}
+
 
     ]
     /*, "Python",
@@ -38,7 +45,7 @@ const Skills = () => {
 
 
     return (
-        <div>
+        <div id="skills">
             <h1 className="text-4xl">Skills</h1>
             <div className="flex flex-wrap ">
             {

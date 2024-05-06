@@ -13,9 +13,10 @@ const Navbar = () => {
 
             <ul className="flex">
                 <li className="ml-10"><Link href='/'>Home</Link></li>
-                <li className="ml-10">Skills</li>
-                <li className="ml-10">Projects</li>
-                <li className="ml-10">Contact</li>
+                <li className="ml-10"><Link href='/#skills'>About</Link></li>
+                <li className="ml-10"><Link href='/#skills'>Skills</Link></li>
+                <li className="ml-10"><Link href='/#projects'>Projects</Link></li>
+                <li className="ml-10"><Link href='/#contact'>Contact</Link></li>
             </ul>
 
         </nav>

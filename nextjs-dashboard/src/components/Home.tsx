@@ -6,7 +6,7 @@ const Home = () => {
 
 
     return (
-        <div className="p-5 md:grid grid-cols-2 gap-5 items-center">
+        <div className="p-5 md:grid grid-cols-2 gap-5 items-center w-full h-screen">
             <div>
                 <h1 className="text-4xl font-semibold">Hi, I'm Aliya Salmanova</h1>
                 <h2 className="text-3xl">a Full Stack Web Developer</h2>
