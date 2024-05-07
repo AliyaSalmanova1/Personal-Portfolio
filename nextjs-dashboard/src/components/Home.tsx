@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import {FaGithub, FaLinkedinIn} from "react-icons/fa"
 
 
 const Home = () => {
@@ -13,9 +14,18 @@ const Home = () => {
             </div>
             
             <Image className="rounded-full"
-            src="/profilePhoto.jpg"  alt="photo"
+             src="/profilePhoto.jpg"  alt="photo"
              width="400"
-             height="400" />
+             height="400" 
+            />
+            <a 
+             href="https://github.com/AliyaSalmanova1">
+                <FaGithub />
+            </a>
+            <a 
+             href="https://www.linkedin.com/in/aliya-salmanova-4150711b6/">
+                <FaLinkedinIn />
+            </a>
 
 
         </div>
