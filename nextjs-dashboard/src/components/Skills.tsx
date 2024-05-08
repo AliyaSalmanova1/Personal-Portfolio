@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Image from 'next/image';
 
-
+//https://icons8.com/icons/set/technology
 
 
 const Skills = () => {
@@ -20,14 +20,14 @@ const Skills = () => {
   interface SkillObjType{
     technology: string;
     icon: string
-}
+  }
 
-  const [skillsList, setSkillsList] = useState<SkillObjType[]>([])
+  const [skillsList, setSkillsList] = useState<SkillObjType[][]>([])
 
   
   useEffect(() => {
 
-    setSkillsList([
+    setSkillsList([[
       {technology: "TypeScript/JavaScript",
       icon: "/skillsIcons/tsIcon.png"},
       {technology: "React",
@@ -43,7 +43,11 @@ const Skills = () => {
       {technology: "Firebase",
       icon: "/skillsIcons/firebaseIcon.png"},
       {technology: "MongoDB",
-      icon: "/skillsIcons/mongoDBIcon.png"}
+      icon: "/skillsIcons/mongoDBIcon.png"}], [
+      {technology: "Tailwind CSS",
+      icon: "/skillsIcons/tailwindIcon.png"},
+      {technology: "Git/Github",
+      icon: "/skillsIcons/githubIcon.png"}]
   
   
   ])
@@ -53,33 +57,50 @@ const Skills = () => {
   
 
   return (
-    <div>
-      <h1>Custom Slider 1</h1>
+    <div id="skills" className="h-screen py-20">
+      <h1 className="text-4xl">Skills</h1>
       <br />
+      
       <Swiper
         modules={[Navigation, Pagination, A11y]}
         slidesPerView={1}
         spaceBetween={15}
+       
         breakpoints={{
-          480: { slidesPerView: 2 },
-          740: { slidesPerView: 3 },
-          1275: { slidesPerView: 4 },
+          480: { slidesPerView: 1 },
+          740: { slidesPerView: 1 },
+          1275: { slidesPerView: 1 },
         }}
       >
-        {skillsList.map(({technology, icon}) => (
-          <SwiperSlide
-            key={technology}
-            className='bg-red-200 !flex justify-center items-center'
-          >
-            <div className='border-2 border-blue-500 rounded-lg overflow-hidden w-[200px] h-[300px] flex justify-center items-center'>
-              <Image
-                src={icon}
-                width={150}
-                height={150}
-                alt={icon }
-              />
-            </div>
+        {skillsList.map((array, index) => (
+          
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2">
+            <SwiperSlide
+                key={index}
+                className="grid lg:grid-cols-4 sm:grid-cols-2"
+              >
+            
+            {array.map(({technology, icon}) => (
+          
+              
+              <div className="w-full flex justify-between items-center">
+                <span>{technology}</span>
+                <Image
+                  src={icon}
+                  width={68}
+                  height={68}
+                  alt={icon }
+                />
+              </div>
+            
+  
+            
+          
+            
+          ))}
           </SwiperSlide>
+          </div>
+
         ))}
 
   
