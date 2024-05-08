@@ -24,7 +24,19 @@ const Skills = () => {
     icon: string
   }
 
-  const [skillsList, setSkillsList] = useState<SkillObjType[][]>([])
+  type SkillListType = [
+    SkillObjType?,
+    SkillObjType?,
+    SkillObjType?,
+    SkillObjType?,
+    SkillObjType?,
+    SkillObjType?,
+    SkillObjType?,
+    SkillObjType?,
+
+  ]
+
+  const [skillsList, setSkillsList] = useState<SkillListType[]>([])
 
  
 
@@ -34,7 +46,7 @@ const Skills = () => {
 
     setSkillsList([
       [
-      {technology: "TypeScript/JavaScript",
+      {technology: "TypeScript",
       icon: "/skillsIcons/tsIcon.png"},
       {technology: "React",
       icon: "/skillsIcons/react.png"},
@@ -55,7 +67,19 @@ const Skills = () => {
       {technology: "Tailwind CSS",
       icon: "/skillsIcons/tailwindIcon.png"},
       {technology: "Git/Github",
-      icon: "/skillsIcons/githubIcon.png"}
+      icon: "/skillsIcons/githubIcon.png"},
+      {technology: "Express.js",
+      icon: "/skillsIcons/expressIcon.png"},
+      {technology: "webpack",
+      icon: "/skillsIcons/webpackIcon.png"},
+      {technology: "JavaScript",
+      icon: "/skillsIcons/jsIcon.png"},
+      {technology: "HTML",
+      icon: "/skillsIcons/htmlIcon.png"},
+      {technology: "Python",
+      icon: "/skillsIcons/pythonIcon.png"},
+      {technology: "Electron",
+      icon: "/skillsIcons/electronIcon.png"}
     ]
   
   ])
@@ -100,25 +124,26 @@ const Skills = () => {
                 className="!grid lg:grid-cols-4 sm:grid-cols-2 gap-4"
               >
             
-            {array.map(({technology, icon}) => (
+            {array.map((arr) => {
+              if (!arr) return (<></>)
           
-              
+              return (
               <div className="w-full flex justify-between items-center
               p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
-                <span>{technology}</span>
+                <span>{arr?.technology}</span>
                 <Image
-                  src={icon}
+                  src={arr?.icon}
                   width={68}
                   height={68}
-                  alt={icon }
+                  alt={arr?.icon }
                 />
-              </div>
+              </div>)
             
   
             
           
             
-          ))}
+            })}
           </SwiperSlide>
     
 
