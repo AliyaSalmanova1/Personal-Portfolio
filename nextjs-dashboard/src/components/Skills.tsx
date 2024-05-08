@@ -74,10 +74,10 @@ const Skills = () => {
       >
         {skillsList.map((array, index) => (
           
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2">
+          
             <SwiperSlide
                 key={index}
-                className="grid lg:grid-cols-4 sm:grid-cols-2"
+                className="!grid lg:grid-cols-4 sm:grid-cols-2"
               >
             
             {array.map(({technology, icon}) => (
@@ -99,7 +99,7 @@ const Skills = () => {
             
           ))}
           </SwiperSlide>
-          </div>
+    
 
         ))}
 
