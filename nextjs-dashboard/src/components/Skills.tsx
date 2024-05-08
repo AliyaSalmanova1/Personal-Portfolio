@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 
 
+
 const Skills = () => {
 
     interface SkillObjType{
@@ -45,13 +46,13 @@ const Skills = () => {
 
 
     return (
-        <div id="skills">
+        <div id="skills" className="h-screen py-20">
             <h1 className="text-4xl">Skills</h1>
-            <div className="flex flex-wrap ">
+            <div className="grid lg:grid-cols-4 sm:grid-cols-2 ">
             {
                 skillsList.map(({technology, icon}) => {
                     return (
-                        <div className="w-full sm:w-1/2 flex justify-between items-center" >
+                        <div className="w-full flex justify-between items-center" >
                             <span>{technology}</span>
                             <Image 
                             src={icon}

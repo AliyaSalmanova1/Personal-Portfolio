@@ -9,6 +9,7 @@ import Contact from "../components/Contact"
 export default function MyApp() {
   return (
     <div className="flex flex-col items-center">
+      <Navbar />
   
       <main className="max-w-screen-xl">
         <Home />
