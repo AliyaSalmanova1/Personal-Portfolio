@@ -8,10 +8,10 @@ import Contact from "../components/Contact"
 
 export default function MyApp() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-screen">
       <Navbar />
   
-      <main className="max-w-screen-xl">
+      <main className="w-full max-w-screen-xl ">
         <Home />
         <About />
         <Skills />
