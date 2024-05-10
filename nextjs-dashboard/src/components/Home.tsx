@@ -8,13 +8,14 @@ const Home = () => {
 
 
     return (
+     
     
-        <div className="w-full h-screen flex flex-col justify-center
-        mt-[-80px]
+        <div className="w-full min-h-screen flex flex-col justify-center
+        mt-[-80px] pt-[80px]
         ">
             
-            <div className=" p-5 flex flex-col md:flex-row grid-cols-2 gap-5 items-center text-center md:text-left">
-                <div className="mx-auto ">
+            <div className=" p-5 flex justify-center flex-col md:flex-row gap-5 items-center text-center md:text-left">
+                <div className=" ">
                     <h1 className=" text-4xl font-semibold">Hi, I'm <span className="text-[#800020]">Aliya</span></h1>
                     <h2 className="text-3xl">a Full Stack Web Developer</h2>
                     <br/>
@@ -60,6 +61,10 @@ const Home = () => {
                 </a>
             </div>
         </div>
+
+        
+
+ 
         
         
     )
