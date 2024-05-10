@@ -33,6 +33,10 @@ const Skills = () => {
     SkillObjType?,
     SkillObjType?,
     SkillObjType?,
+    SkillObjType?,
+    SkillObjType?,
+    SkillObjType?,
+    SkillObjType?
 
   ]
 
@@ -80,7 +84,11 @@ const Skills = () => {
       icon: "/skillsIcons/pythonIcon.png"},
       {technology: "Electron",
       icon: "/skillsIcons/electronIcon.png"}
-    ]
+    ],
+    [{technology: "SQL",
+    icon: "/skillsIcons/sqlIcon.png"},
+    {technology: "SASS",
+    icon: "/skillsIcons/sassIcon.png"}]
   
   ])
 
@@ -100,7 +108,7 @@ const Skills = () => {
   
 
   return (
-    <div id="skills" className="h-screen py-20 px-5">
+    <div id="skills" className=" pt-[90px] px-5">
       <h1 className="text-4xl">Skills</h1>
       <br />
       
@@ -121,7 +129,7 @@ const Skills = () => {
           
             <SwiperSlide
                 key={index}
-                className="!grid lg:grid-cols-4 sm:grid-cols-2 gap-4"
+                className="!grid lg:grid-cols-4 grid-cols-2 gap-4"
               >
             
             {array.map((arr) => {

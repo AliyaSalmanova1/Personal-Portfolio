@@ -8,25 +8,30 @@ const Home = () => {
 
 
     return (
-        <div className="w-full h-screen flex flex-col justify-center">
-            <div className="p-5 flex flex-col md:flex-row grid-cols-2 gap-5 items-center text-center md:text-left">
-                <div className="mx-auto">
-                    <h1 className="text-4xl font-semibold">Hi, I'm Aliya Salmanova</h1>
+    
+        <div className="w-full h-screen flex flex-col justify-center
+        mt-[-80px]
+        ">
+            
+            <div className=" p-5 flex flex-col md:flex-row grid-cols-2 gap-5 items-center text-center md:text-left">
+                <div className="mx-auto ">
+                    <h1 className=" text-4xl font-semibold">Hi, I'm <span className="text-[#800020]">Aliya</span></h1>
                     <h2 className="text-3xl">a Full Stack Web Developer</h2>
                     <br/>
-                    <p className="max-w-[740px]">I love crafting reliable, maintainable code to build 
-                        intuitive user interfaces integrating backend technologies!
-                        Scroll below for more information.
+                    <p className="max-w-[740px]">I love building
+                         user-friendly interfaces integrating backend technologies! <br />
+                        Crafting reliable, maintainable code is always a top priority.<br/><br/>
+                        <span className="text-[#800020]">Scroll below for more information.</span>
                     </p>
                 </div>
               
                 
-                <div className="shrink-0" style={{ position: "relative", width: `${400}px`, height: `${400}px` }}>
+                <div className="shrink-0" style={{ position: "relative", width: `${300}px`, height: `${300}px` }}>
                     <Image
                         src="/profilePhoto.jpg"
                         alt="photo"
                         fill
-                        className="rounded-full shrink-0 w-[400px] h-[400px]"
+                        className="rounded-full shrink-0 max-w-[300px] max-h-[300px]"
                         style={{ objectFit: "cover" }}
                     />
                 </div>
