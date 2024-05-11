@@ -108,7 +108,7 @@ const Skills = () => {
   
 
   return (
-    <div id="skills" className=" pt-[90px] px-5 max-w-[1400px] mx-auto">
+    <div id="skills" className=" pt-[90px] px-5 max-w-[1300px] mx-auto">
       <h1 className="text-4xl">Skills</h1>
       <br />
       

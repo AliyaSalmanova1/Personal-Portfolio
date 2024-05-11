@@ -9,7 +9,7 @@ import {FaGithub, FaLinkedinIn, FaEnvelope} from "react-icons/fa"
 const Contact = () => {
 
     return (
-        <div id='contact' className="max-w-[1240px] mx-auto shrink-1
+        <div id='contact' className="max-w-[1300px] mx-auto shrink-1
         p-5 my-16">
             <div  className="flex flex-col md:flex-row 
             

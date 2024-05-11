@@ -8,41 +8,41 @@ const Projects = () => {
 
     const projectsInfo = [{
         title: "Peppermint",
-        bgImage: "/code.jpg",
+        bgImage: "/projects/peppermint.png",
         projectUrl: "https://github.com/oslabs-beta/PepperMint"
     },
     {
         title: "Anthropological Archive",
-        bgImage: "/code.jpg",
+        bgImage: "/projects/lore.png",
         projectUrl: "https://github.com/jigglypuffnyoi7/AnthropologicalArchive"
     },
     {
         title: "The Social Hour",
-        bgImage: "/code.jpg",
+        bgImage: "/projects/socialHour.png",
         projectUrl: "https://github.com/Panda-Shark5/The-Social-Hour"
     },
     {
         title: "Music Match",
-        bgImage: "/code.jpg",
+        bgImage: "/projects/musicMatch.png",
         projectUrl: "https://github.com/red-lipped-batfish-nyoi7/Music-Match-1.0"
     }
 ]
 
   return (
-    <div id="projects" className=" pt-[90px] px-5 max-w-[1400px] mx-auto">
+    <div id="projects" className=" pt-[90px] px-5 max-w-[1300px] mx-auto">
       <h1 className="text-4xl">Projects</h1>
       <br />
       <div className='grid md:grid-cols-2 gap-8 min-h-[800px]'>
-        {projectsInfo.map((projInfo) => {
+        {projectsInfo.map((projInfo, index) => {
             return (
                 <div className="relative group h-auto w-full border-2
                 hover:bg-gradient-to-r from-[#8d1936] to-[#a64d63]
-                text-[#fff6ec] rounded-xl">
+                text-[#fff6ec] rounded-xl bg-[#a64d63]">
                     <Image 
                     src={projInfo.bgImage}
                     alt="image"
                     layout='fill'
-                    objectFit='cover'
+                    objectFit={index=== 1 ? "contain" : "cover"}
                     className="group-hover:opacity-15 absolute top-0 left-0 h-ful
                     rounded-xl"
                   

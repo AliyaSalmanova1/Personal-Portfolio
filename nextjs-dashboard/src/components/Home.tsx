@@ -11,10 +11,10 @@ const Home = () => {
      
     
         <div className="w-full min-h-screen flex flex-col justify-center
-        mt-[-80px] pt-[80px]  relative
+        mt-[-80px] pt-[80px]  relative max-w-[1200px] mx-auto
         ">
             
-            <div className=" p-5 flex justify-center flex-col md:flex-row gap-5 items-center text-center md:text-left">
+            <div className="w-full p-5 flex  justify-center flex-col md:flex-row gap-5 items-center text-center md:text-left">
                 <div className=" ">
                     <h1 className=" text-4xl font-semibold">Hi, I'm <span className="text-[#800020]">Aliya</span></h1>
                     <h2 className="text-3xl">a Full Stack Web Developer</h2>
