@@ -109,7 +109,8 @@ const Skills = () => {
 
   return (
     <div id="skills" className=" pt-[90px] px-5 max-w-[1300px] mx-auto">
-      <h1 className="text-4xl">Skills</h1>
+      <p className="text-xl uppercase text-[#800020] mb-2">Skills</p>
+      <h1 className="text-3xl font-semibold mb-2">Technologies I Use</h1>
       <br />
       
       <Swiper
@@ -157,14 +158,14 @@ const Skills = () => {
 
         ))}
         <br/>
-        <div className='w-full flex justify-center'>
-        <button className='w-10 h-10 p-1 rounded-md' onClick={handlePrev}>
-          <FaAngleLeft className="text-gray-300 h-10 w-5"/>
-        </button>
-        <button className='w-10 h-10 p-1 rounded-md' onClick={handleNext}>
-          <FaAngleRight className="text-gray-300 h-10 w-5"/>
-        </button>
-      </div>
+        <div className='w-full flex justify-center mt-2'>
+          <button className='w-10 h-10 p-1 rounded-md' onClick={handlePrev}>
+            <FaAngleLeft className="text-gray-300 h-10 w-5"/>
+          </button>
+          <button className='w-10 h-10 p-1 rounded-md' onClick={handleNext}>
+            <FaAngleRight className="text-gray-300 h-10 w-5"/>
+          </button>
+        </div>
 
   
       </Swiper>

@@ -11,6 +11,8 @@ const Contact = () => {
     return (
         <div id='contact' className="max-w-[1300px] mx-auto shrink-1
         p-5 my-16">
+            <p className="text-xl uppercase text-[#800020] mb-2">Contact</p>
+            <h1 className="text-3xl font-semibold mb-8">Get In Touch With Me</h1>
             <div  className="flex flex-col md:flex-row 
             
             gap-10
@@ -28,9 +30,10 @@ const Contact = () => {
                     <p>Web Developer</p>
                     <p className='py-4'>
                     I am available for freelance or full-time positions. 
-                    <br/> Contact
-                    me and let&apos;s talk.
+                    
                     </p>
+                    <p className="text-lg uppercase text-[#800020] mt-6 mb-2">Contact me 
+                    and let's talk</p>
 
                     <div className="flex  w-[260px] justify-between">
                 <a className="rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300
@@ -70,41 +73,44 @@ const Contact = () => {
                 }}  
                 >
 
-                    <label>Name<br/>
-                    <input
-                        className="border-2 rounded-lg p-3 border-gray-300
-                        w-full" 
+                    <label className="mb-4">Name<br/>
+                        <input
+                            className="border-2 rounded-lg p-3 border-gray-300
+                            w-full mt-2" 
                         />
                         
                     </label>
                     
                     
-                    <label>Email<br/>
+                    <label className="mb-4">Email<br/>
                         <input 
                         className="border-2 rounded-lg p-3 border-gray-300
-                        w-full" 
+                        w-full mt-2" 
                         name="senderEmail" 
                         type="email"
                         required/>
                     </label>
                     
-                    <label>Subject<br/>
+                    <label className="mb-4">Subject<br/>
                         <input 
                         className="border-2 rounded-lg p-3 border-gray-300
-                        w-full" 
+                        w-full mt-2" 
                         />
                     </label>
                     
-                    <label>Message<br/>
+                    <label className="mb-4">Message<br/>
                         <textarea
                         className="border-2 rounded-lg p-3 border-gray-300
-                        w-full" 
+                        w-full mt-2" 
                         name="message" 
                         rows={10}
                         required></textarea>
                     </label>
                     
-                    <button type="submit">Submit</button>
+                    <button 
+                    className="w-full text-[#fff6ec] p-4 rounded-lg
+                    bg-gradient-to-r from-[#8d1936] to-[#a64d63]"
+                    type="submit">Submit</button>
                 </form>
             
             </div>

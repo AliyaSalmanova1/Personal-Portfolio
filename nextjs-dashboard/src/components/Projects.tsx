@@ -1,6 +1,6 @@
 
 import React from "react";
-import ProjectItem from "./ProjectItem"
+
 import Image from "next/image"
 import Link from "next/link"
 
@@ -30,20 +30,23 @@ const Projects = () => {
 
   return (
     <div id="projects" className=" pt-[90px] px-5 max-w-[1300px] mx-auto">
-      <h1 className="text-4xl">Projects</h1>
+      <p className="text-xl uppercase text-[#800020] mb-2">Projects</p>
+      <h1 className="text-3xl font-semibold mb-2">Apps I've Built</h1>
       <br />
-      <div className='grid md:grid-cols-2 gap-8 min-h-[800px]'>
+      <div className='grid md:grid-cols-2 gap-8 min-h-screen'>
         {projectsInfo.map((projInfo, index) => {
             return (
                 <div className="relative group h-auto w-full border-2
                 hover:bg-gradient-to-r from-[#8d1936] to-[#a64d63]
-                text-[#fff6ec] rounded-xl bg-[#a64d63]">
+                text-[#fff6ec] rounded-xl bg-[#a64d63]
+                ">
                     <Image 
                     src={projInfo.bgImage}
                     alt="image"
                     layout='fill'
                     objectFit={index=== 1 ? "contain" : "cover"}
-                    className="group-hover:opacity-15 absolute top-0 left-0 h-ful
+                    className="group-hover:opacity-15 absolute top-0 
+                    left-0 h-ful
                     rounded-xl"
                   
                     />
