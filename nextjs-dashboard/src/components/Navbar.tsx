@@ -2,7 +2,7 @@
 import {useState, useEffect} from "react"
 import Link from 'next/link';
 
-import {AiOutlineMenu } from 'react-icons/ai';
+import {AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 
 const AliyaSalmanova = () => {
@@ -38,7 +38,9 @@ const Navbar = () => {
                 "bg-[#fff6ec] sticky top-0 z-[999] h-20 w-full px-2 flex justify-between items-center"
             }>
             
-                <h1 className="text-[#800020]">{<AliyaSalmanova />}</h1>
+                <h1 className="text-[#800020]">
+                <span>{"<"}</span><span>AliyaSalmanova</span><span>{" />"}</span>
+                </h1>
 
                 <ul className="hidden md:flex">
                     <li className="ml-10"><Link href='/'>Home</Link></li>
@@ -71,23 +73,33 @@ const Navbar = () => {
                 {/* Side Drawer Menu */}
 
                 <div className={
-                    nav ? "bg-[#fff6ec] fixed left-0 top-0 w-[75%] h-screen z-[999] sticky" :
-                    "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999]"
+                    nav ? "bg-[#fff6ec] fixed left-0 top-0 w-[75%] h-screen z-[999] sticky px-5 py-6" :
+                    "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999] px-4 py-6"
                 }>
+                    <div className="flex justify-between items-center mb-6">
+                        <div><span>{"<"}</span><span>AliyaSalmanova</span><span>{" />"}</span> </div>
+                        <div onClick={handleNav} 
+                        className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer">
+                            <AiOutlineClose />
+                        </div>
+                    </div>
+                    
+                    <span className="uppercase">Let's build something together</span>
+                    <hr className="bg-[#800020] my-5"></hr>
                     <ul className="">
-                        <li className="ml-10" onClick={() => setNav(false)}>
+                        <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/'>Home</Link>
                         </li>
-                        <li className="ml-10" onClick={() => setNav(false)}>
+                        <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#about'>About</Link>
                         </li>
-                        <li className="ml-10" onClick={() => setNav(false)}>
+                        <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#skills'>Skills</Link>
                         </li>
-                        <li className="ml-10" onClick={() => setNav(false)}>
+                        <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#projects'>Projects</Link>
                         </li>
-                        <li className="ml-10" onClick={() => setNav(false)}>
+                        <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#contact'>Contact</Link>
                         </li>
                     </ul>
