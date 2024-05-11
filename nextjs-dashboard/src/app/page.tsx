@@ -11,7 +11,7 @@ export default function MyApp() {
     <div className="flex flex-col items-center w-screen bg-[#fff6ec]">
       <Navbar />
   
-      <main className="w-screen  ">
+      <main className="w-screen z-auto">
         <Home />
         <About />
         <Skills />

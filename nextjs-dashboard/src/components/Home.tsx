@@ -11,7 +11,7 @@ const Home = () => {
      
     
         <div className="w-full min-h-screen flex flex-col justify-center
-        mt-[-80px] pt-[80px]
+        mt-[-80px] pt-[80px]  relative
         ">
             
             <div className=" p-5 flex justify-center flex-col md:flex-row gap-5 items-center text-center md:text-left">

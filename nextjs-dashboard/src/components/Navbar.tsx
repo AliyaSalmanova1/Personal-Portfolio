@@ -34,8 +34,8 @@ const Navbar = () => {
         <>
             <nav className={
                 shadow ?
-                "shadow-xl sticky top-0 z-50 h-20 w-full px-2 flex justify-between items-center" : 
-                "sticky top-0 z-50 h-20 w-full px-2 flex justify-between items-center"
+                "bg-[#fff6ec] shadow-xl z-[999] sticky top-0 h-20 w-full px-2 flex justify-between items-center" : 
+                "bg-[#fff6ec] sticky top-0 z-[999] h-20 w-full px-2 flex justify-between items-center"
             }>
             
                 <h1 className="text-[#800020]">{<AliyaSalmanova />}</h1>
@@ -60,12 +60,37 @@ const Navbar = () => {
 
             </nav>
 
+            {/* Mobile Menu */}
+            {/* Overlay */}
+
             <div className={
             nav? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" :
             ""
             }>
 
-                <div className="">
+                {/* Side Drawer Menu */}
+
+                <div className={
+                    nav ? "bg-blue-500 fixed left-0 top-0 w-[75%] h-screen z-50 sticky" :
+                    "fixed left-[-100%] top-0"
+                }>
+                    <ul className="">
+                        <li className="ml-10" onClick={() => setNav(false)}>
+                            <Link href='/'>Home</Link>
+                        </li>
+                        <li className="ml-10" onClick={() => setNav(false)}>
+                            <Link href='/#about'>About</Link>
+                        </li>
+                        <li className="ml-10" onClick={() => setNav(false)}>
+                            <Link href='/#skills'>Skills</Link>
+                        </li>
+                        <li className="ml-10" onClick={() => setNav(false)}>
+                            <Link href='/#projects'>Projects</Link>
+                        </li>
+                        <li className="ml-10" onClick={() => setNav(false)}>
+                            <Link href='/#contact'>Contact</Link>
+                        </li>
+                    </ul>
                     
                 </div>
 
