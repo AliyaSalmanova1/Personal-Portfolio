@@ -37,20 +37,21 @@ const Projects = () => {
             return (
                 <div className="relative group h-auto w-full border-2
                 hover:bg-gradient-to-r from-[#8d1936] to-[#a64d63]
-                text-[#fff6ec]">
+                text-[#fff6ec] rounded-xl">
                     <Image 
                     src={projInfo.bgImage}
                     alt="image"
                     layout='fill'
                     objectFit='cover'
-                    className="group-hover:opacity-15 absolute top-0 left-0 h-full"
+                    className="group-hover:opacity-15 absolute top-0 left-0 h-ful
+                    rounded-xl"
                   
                     />
                     <div className="hidden group-hover:flex absolute top-0 left-0 flex-col
-                    justify-center items-center h-full">
-                        <h2>{projInfo.title}</h2>
+                    justify-center items-center h-full w-full gap-4">
+                        <h2 className="mx-auto text-lg">{projInfo.title}</h2>
                         <Link href={projInfo.projectUrl}>
-                          <p>View</p>
+                          <p className="px-5 py-2 bg-[#fff6ec] rounded-lg text-[#800020]">View</p>
                         </Link>
 
                     </div>
