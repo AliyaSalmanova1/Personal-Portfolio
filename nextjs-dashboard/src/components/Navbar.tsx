@@ -64,15 +64,15 @@ const Navbar = () => {
             {/* Overlay */}
 
             <div className={
-            nav? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" :
-            ""
+            nav? "bg-[#fff6ec] z-[999] md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" :
+            "z-[999] bg-[#fff6ec]"
             }>
 
                 {/* Side Drawer Menu */}
 
                 <div className={
-                    nav ? "bg-blue-500 fixed left-0 top-0 w-[75%] h-screen z-50 sticky" :
-                    "fixed left-[-100%] top-0"
+                    nav ? "bg-[#fff6ec] fixed left-0 top-0 w-[75%] h-screen z-[999] sticky" :
+                    "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999]"
                 }>
                     <ul className="">
                         <li className="ml-10" onClick={() => setNav(false)}>
