@@ -21,6 +21,10 @@ html {
   }
 }
 
+.text-shadow{
+  text-shadow: 0.5px 1px 2px pink;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

@@ -3,6 +3,7 @@ import {useState, useEffect} from "react"
 import Link from 'next/link';
 
 import {AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import {FaGithub, FaLinkedinIn, FaEnvelope} from "react-icons/fa"
 
 
 const AliyaSalmanova = () => {
@@ -38,9 +39,11 @@ const Navbar = () => {
                 "bg-[#fff6ec] sticky top-0 z-[999] h-20 w-full px-2 flex justify-between items-center"
             }>
             
-                <h1 className="text-[#800020]">
-                <span>{"<"}</span><span>AliyaSalmanova</span><span>{" />"}</span>
-                </h1>
+                <h3 className="italic text-xl text-shadow">
+                    <span>{"<"}</span>
+                    <span className="text-[#800020]">AliyaSalmanova /</span>
+                    <span>{">"}</span> 
+                </h3>
 
                 <ul className="hidden md:flex">
                     <li className="ml-10"><Link href='/'>Home</Link></li>
@@ -73,18 +76,22 @@ const Navbar = () => {
                 {/* Side Drawer Menu */}
 
                 <div className={
-                    nav ? "bg-[#fff6ec] fixed left-0 top-0 w-[75%] h-screen z-[999] sticky px-5 py-6" :
-                    "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999] px-4 py-6"
+                    nav ? "bg-[#fff6ec] fixed left-0 top-0 w-[75%] h-screen z-[999] sticky px-5 py-6  ease-in duration-300" :
+                    "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999] px-5 py-6  ease-in duration-300"
                 }>
-                    <div className="flex justify-between items-center mb-6">
-                        <div><span>{"<"}</span><span>AliyaSalmanova</span><span>{" />"}</span> </div>
+                    <div className="flex justify-between items-end mb-16">
+                        <h3 className="italic text-xl text-shadow">
+                            <span>{"<"}</span>
+                            <span className="text-[#800020]">AliyaSalmanova /</span>
+                            <span>{">"}</span> 
+                        </h3>
                         <div onClick={handleNav} 
                         className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer">
                             <AiOutlineClose />
                         </div>
                     </div>
                     
-                    <span className="uppercase">Let's build something together</span>
+                    <span className="uppercase ">Let's build something together</span>
                     <hr className="bg-[#800020] my-5"></hr>
                     <ul className="">
                         <li className="py-4" onClick={() => setNav(false)}>
@@ -103,6 +110,29 @@ const Navbar = () => {
                             <Link href='/#contact'>Contact</Link>
                         </li>
                     </ul>
+
+                    <h3 className="text-[#800020] mt-32 uppercase">let's connect</h3>
+                    <div className="flex justify-evenly mt-10">
+                        <a className="rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300
+                        flex w-[48px] h-[48px]
+                        "
+                        href="https://github.com/AliyaSalmanova1">
+                            <FaGithub className="
+                            mx-auto self-center"/>
+                        </a>
+                        <a className="rounded-full shadow-lg shadow-gray-400
+                        flex w-[48px] h-[48px]"
+                        href="https://www.linkedin.com/in/aliya-salmanova-4150711b6/">
+                            <FaLinkedinIn className="
+                            mx-auto self-center"/>
+                        </a>
+                        <a href="mailto:aliyasalmanova1@gmail.com"
+                        className="rounded-full shadow-lg shadow-gray-400
+                        flex w-[48px] h-[48px]">
+                            <FaEnvelope className="
+                            mx-auto self-center"/>
+                        </a>
+                    </div>
                     
                 </div>
 
