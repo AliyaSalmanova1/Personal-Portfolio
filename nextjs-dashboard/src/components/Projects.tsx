@@ -29,7 +29,8 @@ const Projects = () => {
 ]
 
   return (
-    <div id="projects" className=" pt-[90px] px-5 max-w-[1300px] mx-auto">
+    <div id="projects" className=" pt-[90px] px-5 max-w-[1300px] mx-auto
+    my-16">
       <p className="text-xl uppercase text-[#800020] mb-2">Projects</p>
       <h1 className="text-3xl font-semibold mb-2">Apps I've Built</h1>
       <br />
