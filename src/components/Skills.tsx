@@ -134,8 +134,8 @@ const Skills = () => {
                 className="!grid lg:grid-cols-4 grid-cols-2 gap-4"
               >
             
-            {array.map((arr) => {
-              if (!arr) return (<></>)
+            {array.map((arr, ind) => {
+              if (!arr) return (<div key={`emptySkill${index}+${ind}`}></div>)
           
               return (
               <div 
