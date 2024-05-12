@@ -1,5 +1,5 @@
-
-import React from 'react';
+"use client"
+import React, { useRef, MutableRefObject } from 'react';
 import { sendEmail } from './sendEmail.ts'
 import Image from 'next/image';
 
@@ -7,6 +7,8 @@ import {FaGithub, FaLinkedinIn, FaEnvelope} from "react-icons/fa"
 
 
 const Contact = () => {
+
+    const formRef: MutableRefObject<HTMLFormElement | null> = useRef(null);
 
     return (
         <div id='contact' className="max-w-[1300px] mx-auto shrink-1
@@ -62,13 +64,19 @@ const Contact = () => {
 
 
                 <form 
+                ref={formRef}
                 className="grid grid-cols-1 
                 shadow-xl shadow-gray-300 rounded-lg p-4 md:px-9
                 w-full"
 
                 action={async (formData) => {
-                    "use server"
+                    
+                    
                     await sendEmail(formData)
+
+                    formRef?.current?.reset()
+
+                    
 
                 }}  
                 >
