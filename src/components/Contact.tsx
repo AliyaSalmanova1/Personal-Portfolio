@@ -2,6 +2,7 @@
 import React, { useRef, MutableRefObject } from 'react';
 import { sendEmail } from './sendEmail.ts'
 import Image from 'next/image';
+import Link from "next/link"
 
 import {FaGithub, FaLinkedinIn, FaEnvelope} from "react-icons/fa"
 
@@ -76,6 +77,8 @@ const Contact = () => {
 
                     formRef?.current?.reset()
 
+
+
                     
 
                 }}  
@@ -84,7 +87,8 @@ const Contact = () => {
                     <label className="mb-4">Name<br/>
                         <input
                             className="border-2 rounded-lg p-3 border-gray-300
-                            w-full mt-2" 
+                            w-full mt-2
+                            focus-visible:outline-[#a64d63]" 
                         />
                         
                     </label>
@@ -93,7 +97,7 @@ const Contact = () => {
                     <label className="mb-4">Email<br/>
                         <input 
                         className="border-2 rounded-lg p-3 border-gray-300
-                        w-full mt-2" 
+                        w-full mt-2 focus-visible:outline-[#a64d63]" 
                         name="senderEmail" 
                         type="email"
                         required/>
@@ -102,23 +106,23 @@ const Contact = () => {
                     <label className="mb-4">Subject<br/>
                         <input 
                         className="border-2 rounded-lg p-3 border-gray-300
-                        w-full mt-2" 
+                        w-full mt-2 focus-visible:outline-[#a64d63]" 
                         />
                     </label>
                     
                     <label className="mb-4">Message<br/>
                         <textarea
                         className="border-2 rounded-lg p-3 border-gray-300
-                        w-full mt-2" 
+                        w-full mt-2 focus-visible:outline-[#a64d63]" 
                         name="message" 
                         rows={10}
                         required></textarea>
                     </label>
                     
-                    <button 
+                    <Link href="/"><button 
                     className="w-full text-[#fff6ec] p-4 rounded-lg
                     bg-gradient-to-r from-[#8d1936] to-[#a64d63]"
-                    type="submit">Submit</button>
+                    type="submit">Submit</button></Link>
                 </form>
             
             </div>

@@ -53,7 +53,7 @@ const Skills = () => {
       {technology: "TypeScript",
       icon: "/skillsIcons/tsIcon.png"},
       {technology: "React",
-      icon: "/skillsIcons/react.png"},
+      icon: "/skillsIcons/reactIcon.png"},
       {technology: "Redux",
       icon: "/skillsIcons/reduxIcon.png"},
       {technology: "Bootstrap",
