@@ -76,7 +76,7 @@ const Navbar = () => {
                 {/* Side Drawer Menu */}
 
                 <div className={
-                    nav ? "bg-[#fff6ec] fixed left-0 top-0 w-[75%] h-screen z-[999] sticky px-5 py-6  ease-in duration-300" :
+                    nav ? "bg-[#fff6ec] fixed left-0 top-0 w-[75%] h-screen z-[999]  px-5 py-6 transition-all ease-in duration-300" :
                     "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999] px-5 py-6  ease-in duration-300"
                 }>
                     <div className="flex justify-between items-end mb-16">

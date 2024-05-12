@@ -19,9 +19,10 @@ const About = () => {
 
                     
                     <br/>
-                    <p>When I took my first coding class during my studies at NYU University, I immediately fell in love with it. 
-                        Before that I envisioned myself pursuing a career in music, writing compositions for television. 
-                        However, the logical challenges and creative possibilities inherent in coding captured my interest profoundly.
+                    <p>I immediately fell in love with coding when I took my first coding class during my studies at NYU University. 
+                        I was pursuing music, thinking I'd have a career in writing compositions for television. 
+                        However, I knew I wanted my life to be filled with the logical challenges and creative possibilities inherent in coding, 
+                        and have been programming away ever since starting.
                     </p>
                     <br/>
                     <p>
