@@ -33,12 +33,13 @@ const Projects = () => {
       <p className="text-xl uppercase text-[#800020] mb-2">Projects</p>
       <h1 className="text-3xl font-semibold mb-2">Apps I've Built</h1>
       <br />
-      <div className='grid md:grid-cols-2 gap-8 min-h-screen'>
+      <div className='grid md:grid-cols-2 gap-8 '>
         {projectsInfo.map((projInfo, index) => {
             return (
-                <div className="relative group h-auto w-full border-2
+                <div className="relative group  border-2
                 hover:bg-gradient-to-r from-[#8d1936] to-[#a64d63]
                 text-[#fff6ec] rounded-xl bg-[#a64d63]
+                aspect-[8/5] h-auto w-full
                 ">
                     <Image 
                     src={projInfo.bgImage}
@@ -46,8 +47,8 @@ const Projects = () => {
                     layout='fill'
                     objectFit={index=== 1 ? "contain" : "cover"}
                     className="group-hover:opacity-15 absolute top-0 
-                    left-0 h-ful
-                    rounded-xl"
+                    left-0 h-full
+                    rounded-xl aspect-[8/5]"
                   
                     />
                     <div className="hidden group-hover:flex absolute top-0 left-0 flex-col
