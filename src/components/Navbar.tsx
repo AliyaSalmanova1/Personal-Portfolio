@@ -91,7 +91,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     
-                    <span className="uppercase ">Let's build something together</span>
+                    <span className="uppercase ">Let&apos;s build something together</span>
                     <hr className="bg-[#800020] my-5"></hr>
                     <ul className="">
                         <li className="py-4" onClick={() => setNav(false)}>
@@ -111,7 +111,7 @@ const Navbar = () => {
                         </li>
                     </ul>
 
-                    <h3 className="text-[#800020] mt-32 uppercase">let's connect</h3>
+                    <h3 className="text-[#800020] mt-32 uppercase">let&apos;s connect</h3>
                     <div className="flex justify-evenly mt-10">
                         <a className="rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300
                         flex w-[48px] h-[48px]

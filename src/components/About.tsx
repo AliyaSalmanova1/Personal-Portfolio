@@ -20,19 +20,19 @@ const About = () => {
                     
                     <br/>
                     <p>I immediately fell in love with coding when I took my first coding class during my studies at NYU University. 
-                        I was pursuing music, thinking I'd have a career in writing compositions for television. 
+                        I was pursuing music, thinking I&apos;d have a career in writing compositions for television. 
                         However, I knew I wanted my life to be filled with the logical challenges and creative possibilities inherent in coding, 
                         and have been programming away ever since starting.
                     </p>
                     <br/>
                     <p>
                     As a web developer, I love the opportunity to develop projects independently and collaborate within teams. 
-                    I've had the privilege of meeting numerous talented individuals who share my enthusiasm for coding along the way.
+                    I&apos;ve had the privilege of meeting numerous talented individuals who share my enthusiasm for coding along the way.
                     </p>
                     <br/>
                     <p>
-                    When I'm not at the computer, you can find me at my favorite karaoke spot, reading, or fussing over my dog. 
-                    If you'd like to connect, feel free to reach out through the contact section below - I'd love to chat!
+                    When I&apos;m not at the computer, you can find me at my favorite karaoke spot, reading, or fussing over my dog. 
+                    If you&apos;d like to connect, feel free to reach out through the contact section below - I&apos;d love to chat!
                     </p>
 
                 </div>

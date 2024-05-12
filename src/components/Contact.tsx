@@ -35,7 +35,7 @@ const Contact = () => {
                     
                     </p>
                     <p className="text-lg uppercase text-[#800020] mt-6 mb-2">Contact me 
-                    and let's talk</p>
+                    and let&apos;s talk</p>
 
                     <div className="flex  w-[260px] justify-between">
                 <a className="rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300

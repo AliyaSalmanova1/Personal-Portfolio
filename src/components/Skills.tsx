@@ -130,7 +130,7 @@ const Skills = () => {
           
           
             <SwiperSlide
-                key={index}
+                key={`swiperSlide${index}`}
                 className="!grid lg:grid-cols-4 grid-cols-2 gap-4"
               >
             
@@ -138,7 +138,9 @@ const Skills = () => {
               if (!arr) return (<></>)
           
               return (
-              <div className="w-full flex justify-between items-center
+              <div 
+              key={arr?.technology}
+              className="w-full flex justify-between items-center
               p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <span>{arr?.technology}</span>
                 <Image
