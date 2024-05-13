@@ -152,7 +152,7 @@ const Contact = () => {
                     >
                     
                     <HiOutlineChevronDoubleUp 
-                    size={30}
+                    size={30} color="#800020"
                     />
                 
                         
