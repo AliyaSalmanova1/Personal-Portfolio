@@ -5,7 +5,12 @@ import Image from 'next/image';
 import Link from "next/link"
 
 import {FaGithub, FaLinkedinIn, FaEnvelope} from "react-icons/fa"
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+}
 
 const Contact = () => {
 
@@ -13,7 +18,7 @@ const Contact = () => {
 
     return (
         <div id='contact' className="max-w-[1300px] mx-auto shrink-1
-        p-5 my-16 pt-[90px]">
+        p-5 my-16 pt-[90px] ">
             <p className="text-xl uppercase text-[#800020] mb-2">Contact</p>
             <h1 className="text-3xl font-semibold mb-8">Get In Touch With Me</h1>
             <div  className="flex flex-col md:flex-row 
@@ -135,8 +140,25 @@ const Contact = () => {
                    
                     </button>
                 </form>
+                
             
             </div>
+            <div className="flex">
+                <button onClick={scrollToTop}
+                    className="inline-block
+                    rounded-full shadow-lg shadow-gray-400 p-4 h-30 w-30
+                    hover:scale-110 ease-in duration-200
+                    mx-auto mt-5"
+                    >
+                    
+                    <HiOutlineChevronDoubleUp 
+                    size={30}
+                    />
+                
+                        
+                </button>
+            </div>
+            
         </div>
         
     )

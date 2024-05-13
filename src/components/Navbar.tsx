@@ -6,6 +6,7 @@ import {AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import {FaGithub, FaLinkedinIn, FaEnvelope} from "react-icons/fa"
 
 
+
 const AliyaSalmanova = () => {
     return "<AliyaSalmanova />"
   };
@@ -39,10 +40,8 @@ const Navbar = () => {
                 "bg-[#fff6ec] sticky top-0 z-[999] h-20 w-full px-2 flex justify-between items-center"
             }>
             
-                <h3 className="italic text-xl text-shadow">
-                    <span>{"<"}</span>
-                    <span className="text-[#800020]">AliyaSalmanova /</span>
-                    <span>{">"}</span> 
+                <h3 className="italic text-xl text-shadow text-[#800020]">
+                    Aliya Salmanova
                 </h3>
 
                 <ul className="hidden md:flex">
@@ -80,10 +79,8 @@ const Navbar = () => {
                     "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999] px-5 py-6  ease-in duration-300"
                 }>
                     <div className="flex justify-between items-end mb-16">
-                        <h3 className="italic text-xl text-shadow">
-                            <span>{"<"}</span>
-                            <span className="text-[#800020]">AliyaSalmanova /</span>
-                            <span>{">"}</span> 
+                        <h3 className="italic text-xl text-shadow text-[#800020]">
+                            Aliya Salmanova
                         </h3>
                         <div onClick={handleNav} 
                         className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer">
@@ -133,6 +130,7 @@ const Navbar = () => {
                             mx-auto self-center"/>
                         </a>
                     </div>
+                    
                     
                 </div>
 
