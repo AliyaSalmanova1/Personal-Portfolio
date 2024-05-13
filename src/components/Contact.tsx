@@ -76,6 +76,7 @@ const Contact = () => {
                     await sendEmail(formData)
 
                     formRef?.current?.reset()
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
 
 
 
@@ -86,9 +87,12 @@ const Contact = () => {
 
                     <label className="mb-4">Name<br/>
                         <input
+                            name="senderName"
                             className="border-2 rounded-lg p-3 border-gray-300
                             w-full mt-2
                             focus-visible:outline-[#a64d63]" 
+                            required
+
                         />
                         
                     </label>
@@ -105,8 +109,10 @@ const Contact = () => {
                     
                     <label className="mb-4">Subject<br/>
                         <input 
+                        name="subject"
                         className="border-2 rounded-lg p-3 border-gray-300
                         w-full mt-2 focus-visible:outline-[#a64d63]" 
+                        required
                         />
                     </label>
                     
@@ -119,10 +125,15 @@ const Contact = () => {
                         required></textarea>
                     </label>
                     
-                    <Link href="/"><button 
-                    className="w-full text-[#fff6ec] p-4 rounded-lg
-                    bg-gradient-to-r from-[#8d1936] to-[#a64d63]"
-                    type="submit">Submit</button></Link>
+                    <button 
+                    className="w-full inline-block text-[#fff6ec] p-4 rounded-lg
+                    bg-gradient-to-r from-[#8d1936] to-[#a64d63] 
+                    active:opacity-50"
+                    type="submit">
+                      
+                            Submit
+                   
+                    </button>
                 </form>
             
             </div>
