@@ -22,9 +22,9 @@ const Projects = () => {
         projectUrl: "https://github.com/Panda-Shark5/The-Social-Hour"
     },
     {
-        title: "Music Match",
-        bgImage: "/projects/musicMatch.png",
-        projectUrl: "https://github.com/red-lipped-batfish-nyoi7/Music-Match-1.0"
+        title: "Recipe Sharer",
+        bgImage: "/projects/recipeSharer.png",
+        projectUrl: "https://github.com/AliyaSalmanova1/Recipe-Sharing-App"
     }
 ]
 
@@ -48,7 +48,7 @@ const Projects = () => {
                     src={projInfo.bgImage}
                     alt="image"
                     layout='fill'
-                    objectFit={index=== 1 ? "contain" : "cover"}
+                    objectFit={index=== 1 || index === 3 ? "contain" : "cover"}
                     className="group-hover:opacity-15 absolute top-0 
                     left-0 h-full
                     rounded-xl aspect-[8/5]"
