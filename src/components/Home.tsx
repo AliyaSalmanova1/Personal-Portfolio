@@ -10,7 +10,7 @@ const Home = () => {
     return (
      
     
-        <div className="w-full min-h-screen flex flex-col justify-center
+        <div className="w-screen min-h-screen flex flex-col justify-center
         mt-[-80px] pt-[80px]  relative max-w-[1200px] mx-auto
         ">
             
