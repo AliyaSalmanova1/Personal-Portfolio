@@ -9,7 +9,7 @@
 }
 
 *{
-  max-width: screen;
+  max-width: 100vw;
 }
 
 html {
