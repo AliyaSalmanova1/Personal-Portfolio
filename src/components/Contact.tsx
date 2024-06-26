@@ -18,10 +18,10 @@ const Contact = () => {
 
     return (
         <div id='contact' className="max-w-[1300px] mx-auto shrink-1
-        p-5 my-16 pt-[90px] ">
-            <p className="text-xl uppercase text-[#800020] mb-2">Contact</p>
-            <h1 className="text-3xl font-semibold mb-8">Get In Touch With Me</h1>
-            <div  className="flex flex-col md:flex-row 
+         my-16 pt-[90px] ">
+            <p className="px-5 text-xl uppercase text-[#800020] mb-2">Contact</p>
+            <h1 className="px-5 text-3xl font-semibold mb-8">Get In Touch With Me</h1>
+            <div  className="pt-5 px-5 pb-8 flex flex-col md:flex-row 
             
             gap-10
             ">

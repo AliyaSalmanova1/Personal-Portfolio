@@ -108,10 +108,10 @@ const Skills = () => {
   
 
   return (
-    <div id="skills" className="pt-[90px]px-5 max-w-[1300px] mx-auto
+    <div id="skills" className="pt-[90px]  max-w-[1300px] mx-auto
     my-16">
-      <p className="text-xl uppercase text-[#800020] mb-2">Skills</p>
-      <h1 className="text-3xl font-semibold mb-2">Technologies I Use</h1>
+      <p className="text-xl uppercase text-[#800020] mb-2 px-5">Skills</p>
+      <h1 className="text-3xl font-semibold mb-4 px-5">Technologies I Use</h1>
       <br />
       
       <Swiper
@@ -131,7 +131,7 @@ const Skills = () => {
           
             <SwiperSlide
                 key={`swiperSlide${index}`}
-                className="!grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-4"
+                className="!grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-5 pb-8 gap-4"
               >
             
             {array.map((arr, ind) => {
