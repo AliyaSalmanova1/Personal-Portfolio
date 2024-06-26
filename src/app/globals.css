@@ -12,6 +12,9 @@
   max-width: 100vw;
   overflow-x: hidden;
 }
+.MyApp *{
+  overflow: hidden;
+}
 
 html {
   scroll-behavior: smooth;

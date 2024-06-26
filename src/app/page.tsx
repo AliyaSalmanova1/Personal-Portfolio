@@ -9,7 +9,7 @@ import Contact from "../components/Contact"
 
 export default function MyApp() {
   return (
-    <div className="flex flex-col items-center w-screen bg-[#fff6ec]">
+    <div className="MyApp flex flex-col items-center w-screen bg-[#fff6ec]">
       <Navbar />
   
       <main className="w-screen z-auto">
