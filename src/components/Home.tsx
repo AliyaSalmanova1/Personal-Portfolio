@@ -39,7 +39,7 @@ const Home = () => {
 
 
             </div>
-            <div className="flex mx-auto w-[260px] justify-between">
+            <div className="flex mx-auto w-[260px] py-5 px-2 justify-between">
                 <a className="rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300
                 flex w-[68px] h-[68px]
                 "

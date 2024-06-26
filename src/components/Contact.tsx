@@ -43,27 +43,27 @@ const Contact = () => {
                     <p className="text-lg uppercase text-[#800020] mt-6 mb-2">Contact me 
                     and let&apos;s talk</p>
 
-                    <div className="flex  w-[260px] justify-between">
-                <a className="rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300
-                flex w-[68px] h-[68px]
-                "
-                href="https://github.com/AliyaSalmanova1">
-                    <FaGithub className="
-                    mx-auto self-center"/>
-                </a>
-                <a className="rounded-full shadow-lg shadow-gray-400
-                flex w-[68px] h-[68px]"
-                href="https://www.linkedin.com/in/aliya-salmanova-4150711b6/">
-                    <FaLinkedinIn className="
-                    mx-auto self-center"/>
-                </a>
-                <a href="mailto:aliyasalmanova1@gmail.com"
-                className="rounded-full shadow-lg shadow-gray-400
-                flex w-[68px] h-[68px]">
-                    <FaEnvelope className="
-                    mx-auto self-center"/>
-                </a>
-            </div>
+                    <div className="flex  w-full justify-between py-5 px-2">
+                        <a className="rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300
+                        flex w-[68px] h-[68px]
+                        "
+                        href="https://github.com/AliyaSalmanova1">
+                            <FaGithub className="
+                            mx-auto self-center"/>
+                        </a>
+                        <a className="rounded-full shadow-lg shadow-gray-400
+                        flex w-[68px] h-[68px]"
+                        href="https://www.linkedin.com/in/aliya-salmanova-4150711b6/">
+                            <FaLinkedinIn className="
+                            mx-auto self-center"/>
+                        </a>
+                        <a href="mailto:aliyasalmanova1@gmail.com"
+                        className="rounded-full shadow-lg shadow-gray-400
+                        flex w-[68px] h-[68px]">
+                            <FaEnvelope className="
+                            mx-auto self-center"/>
+                        </a>
+                    </div>
                 
 
                 </div>
@@ -143,12 +143,12 @@ const Contact = () => {
                 
             
             </div>
-            <div className="flex">
+            <div className="flex py-5 px-2">
                 <button onClick={scrollToTop}
                     className="inline-block
                     rounded-full shadow-lg shadow-gray-400 p-4 h-30 w-30
                     hover:scale-110 ease-in duration-200
-                    mx-auto mt-5"
+                    mx-auto mt-5 "
                     >
                     
                     <HiOutlineChevronDoubleUp 
