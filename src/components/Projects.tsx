@@ -42,7 +42,7 @@ const Projects = () => {
                 className="relative group  border-2
                 hover:bg-gradient-to-r from-[#8d1936] to-[#a64d63]
                 text-[#fff6ec] rounded-xl bg-[#a64d63]
-                aspect-[8/5] h-auto w-full
+                aspect-[8/5] h-auto min-h-[200px] w-full
                 ">
                     <Image 
                     src={projInfo.bgImage}
