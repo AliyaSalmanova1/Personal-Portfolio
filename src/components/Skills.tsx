@@ -131,7 +131,7 @@ const Skills = () => {
           
             <SwiperSlide
                 key={`swiperSlide${index}`}
-                className="!grid lg:grid-cols-4 grid-cols-2 gap-4"
+                className="!grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-4"
               >
             
             {array.map((arr, ind) => {
