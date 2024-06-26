@@ -33,11 +33,11 @@ const Navbar = () => {
 
 
     return (
-        <>
+        <div className="w-screen">
             <nav className={
                 shadow ?
-                "bg-[#fff6ec] shadow-xl z-[999] sticky top-0 h-20 w-auto px-2 flex justify-between items-center" : 
-                "bg-[#fff6ec] sticky top-0 z-[999] h-20 w-auto px-2 flex justify-between items-center"
+                "bg-[#fff6ec] shadow-xl z-[999] sticky top-0 h-20 w-screen px-2 flex justify-between items-center" : 
+                "bg-[#fff6ec] sticky top-0 z-[999] h-20 w-screen px-2 flex justify-between items-center"
             }>
             
                 <h3 className="italic text-xl text-shadow text-[#800020]">
@@ -136,7 +136,7 @@ const Navbar = () => {
 
             </div>
 
-        </>
+        </div>
 
 
         
