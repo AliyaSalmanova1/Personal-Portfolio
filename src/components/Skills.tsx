@@ -162,10 +162,10 @@ const Skills = () => {
         ))}
         <br/>
         <div className='w-full flex justify-center mt-2'>
-          <button className='w-10 h-10 p-1 rounded-md' onClick={handlePrev}>
+          <button className='w-10 h-10 p-1 rounded-md bg-[#fff6ec]' onClick={handlePrev}>
             <FaAngleLeft className="text-gray-300 h-10 w-5"/>
           </button>
-          <button className='w-10 h-10 p-1 rounded-md' onClick={handleNext}>
+          <button className='w-10 h-10 p-1 rounded-md bg-[#fff6ec]' onClick={handleNext}>
             <FaAngleRight className="text-gray-300 h-10 w-5"/>
           </button>
         </div>

@@ -48,7 +48,7 @@ const Projects = () => {
                     src={projInfo.bgImage}
                     alt="image"
                     layout='fill'
-                    objectFit={index=== 1 || index === 3 ? "contain" : "cover"}
+                    objectFit={ "contain"}
                     className="group-hover:opacity-15 absolute top-0 
                     left-0 h-full
                     rounded-xl aspect-[8/5]"
