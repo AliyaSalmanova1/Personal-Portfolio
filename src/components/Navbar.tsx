@@ -75,22 +75,22 @@ const Navbar = () => {
                 {/* Side Drawer Menu */}
 
                 <div className={
-                    nav ? "bg-[#fff6ec] fixed left-0 top-0 w-[75%] h-screen z-[999]  px-5 py-6 transition-all ease-in duration-300" :
-                    "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999] px-5 py-6  ease-in duration-300"
+                    nav ? "bg-[#fff6ec] fixed left-0 top-0 w-[75%] h-screen z-[999]  py-6 transition-all ease-in duration-300" :
+                    "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999]  py-6  ease-in duration-300"
                 }>
-                    <div className="flex justify-between items-end mb-16">
+                    <div className="flex justify-between items-end mb-8 pb-4 px-5">
                         <h3 className="italic text-xl text-shadow text-[#800020]">
                             Aliya Salmanova
                         </h3>
                         <div onClick={handleNav} 
-                        className="rounded-full shadow-xl shadow-gray-400 p-3 cursor-pointer">
+                        className="rounded-full shadow-lg shadow-gray-400 cursor-pointer p-4">
                             <AiOutlineClose />
                         </div>
                     </div>
                     
-                    <span className="uppercase ">Let&apos;s build something together</span>
-                    <hr className="bg-[#800020] my-5"></hr>
-                    <ul className="">
+                    <span className="uppercase px-5">Let&apos;s build something together</span>
+                    <hr className="bg-[#800020] my-5 px-5"></hr>
+                    <ul className="px-5">
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/'>Home</Link>
                         </li>
@@ -108,8 +108,8 @@ const Navbar = () => {
                         </li>
                     </ul>
 
-                    <h3 className="text-[#800020] mt-32 uppercase">let&apos;s connect</h3>
-                    <div className="flex justify-evenly mt-10">
+                    <h3 className="text-[#800020] mt-32 uppercase px-5">let&apos;s connect</h3>
+                    <div className="flex justify-evenly mt-10 pb-5 px-5">
                         <a className="rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300
                         flex w-[48px] h-[48px]
                         "
