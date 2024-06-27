@@ -20,7 +20,7 @@ const About = () => {
                     
                     <br/>
                     <p>I immediately fell in love with coding when I took my first class in Python programming back in college. 
-                         I've always valued subjects rooted in logical reasoning, as they sharpen the mind and encourage rational thinking.
+                         I&apos;ve always valued subjects rooted in logical reasoning, as they sharpen the mind and encourage rational thinking.
                         I knew then that I wanted my life to be filled with the logical challenges and creative possibilities inherent in coding, 
                         and have been programming away ever since starting.
                     </p>
