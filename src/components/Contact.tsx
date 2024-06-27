@@ -148,7 +148,7 @@ const Contact = () => {
                     className="inline-block
                     rounded-full shadow-lg shadow-gray-400 p-4 h-30 w-30
                     hover:scale-110 ease-in duration-200
-                    mx-auto mt-5 "
+                    mx-auto mt-5 bg-[#fff6ec]"
                     >
                     
                     <HiOutlineChevronDoubleUp 
