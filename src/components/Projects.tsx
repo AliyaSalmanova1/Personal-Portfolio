@@ -34,6 +34,7 @@ const Projects = () => {
       <p className="text-xl uppercase text-[#800020] mb-2">Projects</p>
       <h1 className="text-3xl font-semibold mb-2">Apps I&apos;ve Built</h1>
       <br />
+      {/*projects' grid container*/}
       <div className='grid md:grid-cols-2 gap-8 '>
         {projectsInfo.map((projInfo, index) => {
             return (
