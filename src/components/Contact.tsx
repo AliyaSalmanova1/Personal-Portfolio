@@ -17,7 +17,7 @@ const Contact = () => {
     const formRef: MutableRefObject<HTMLFormElement | null> = useRef(null);
 
     return (
-        <div id='contact' className="max-w-[1300px] mx-auto shrink-1
+        <div id='contact' className="contact max-w-[1300px] mx-auto shrink-1
          my-16 pt-[90px] ">
             <p className="px-5 text-xl uppercase text-[#800020] mb-2">Contact</p>
             <h1 className="px-5 text-3xl font-semibold mb-8">Get In Touch With Me</h1>

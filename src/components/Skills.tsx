@@ -23,7 +23,7 @@ const Skills = () => {
     technology: string;
     icon: string
   }
-
+  //this allows eache slider page to have a maximum of 8 skills, but can have less
   type SkillListType = [
     SkillObjType?,
     SkillObjType?,
@@ -39,13 +39,10 @@ const Skills = () => {
     SkillObjType?
 
   ]
-
+  //skills list has to be state for slider to work
   const [skillsList, setSkillsList] = useState<SkillListType[]>([])
 
  
-
-  
-  
   useEffect(() => {
 
     setSkillsList([
@@ -105,6 +102,8 @@ const Skills = () => {
     swiperRef.current.swiper.slideNext();
   };
   
+  const arrowButtonStyles = "w-10 h-10 p-1 rounded-md bg-[#fff6ec]"
+  const arrowIconStyles = "text-gray-300 h-10 w-5"
   
 
   return (
@@ -126,6 +125,7 @@ const Skills = () => {
           1275: { slidesPerView: 1 },
         }}
       >
+        {/*rendering the different slides */}
         {skillsList.map((array, index) => (
           
           
@@ -133,7 +133,7 @@ const Skills = () => {
                 key={`swiperSlide${index}`}
                 className="!grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-5 pb-8 gap-4"
               >
-            
+             {/*looping through the skills of each slide */}
             {array.map((arr, ind) => {
               if (!arr) return (<div key={`emptySkill${index}+${ind}`}></div>)
           
@@ -152,21 +152,19 @@ const Skills = () => {
               </div>)
             
   
-            
-          
-            
             })}
           </SwiperSlide>
     
 
         ))}
         <br/>
+        {/*arrows*/}
         <div className='w-full flex justify-center mt-2'>
-          <button className='w-10 h-10 p-1 rounded-md bg-[#fff6ec]' onClick={handlePrev}>
-            <FaAngleLeft className="text-gray-300 h-10 w-5"/>
+          <button className={arrowButtonStyles} onClick={handlePrev}>
+            <FaAngleLeft className={arrowIconStyles} />
           </button>
-          <button className='w-10 h-10 p-1 rounded-md bg-[#fff6ec]' onClick={handleNext}>
-            <FaAngleRight className="text-gray-300 h-10 w-5"/>
+          <button className={arrowButtonStyles} onClick={handleNext}>
+            <FaAngleRight className={arrowIconStyles} />
           </button>
         </div>
 

@@ -9,15 +9,17 @@ const About = () => {
         <div id="about" className="w-screen flex flex-col items-center
         my-16 pt-[90px]">
             <h3 className="text-3xl font-bold uppercase text-center text-[#800020]">A little about me </h3>
+            {/*container with dashed border-x */}
+
             <div className="max-w-[1300px] w-full grow shrink-1
             lg:border-x-2  border-[#cc99a6] border-opacity-3 
-                border-dashed 
+            border-dashed 
             flex flex-col justify-center
             text-center mx-auto  px-5 ">
-                
+
+                {/*container for paragraphs*/}
                 <div className="max-w-[900px] mx-auto">
 
-                    
                     <br/>
                     <p>I immediately fell in love with coding when I took my first class in Python programming back in college. 
                          I&apos;ve always valued subjects rooted in logical reasoning, as they sharpen the mind and encourage rational thinking.
@@ -36,8 +38,6 @@ const About = () => {
                     </p>
 
                 </div>
-                
-
 
             </div>
         </div>

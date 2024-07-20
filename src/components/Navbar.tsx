@@ -7,10 +7,6 @@ import {FaGithub, FaLinkedinIn, FaEnvelope} from "react-icons/fa"
 
 
 
-const AliyaSalmanova = () => {
-    return "<AliyaSalmanova />"
-  };
-
 const Navbar = () => {
 
     const [nav, setNav] = useState(false);

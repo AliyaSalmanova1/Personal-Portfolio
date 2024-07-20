@@ -6,14 +6,16 @@ import {FaGithub, FaLinkedinIn, FaEnvelope} from "react-icons/fa"
 
 const Home = () => {
 
+    const roundButtonStyles = "rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300 flex w-[68px] h-[68px]"
+    const iconStyles = "mx-auto self-center"
 
     return (
      
-    
+        
         <div className="w-screen min-h-screen flex flex-col justify-center
         mt-[-80px] pt-[160px]  relative max-w-[1200px] mx-auto
         ">
-            
+            {/*flex container for text an image */}
             <div className="w-full p-5 flex  justify-center flex-col md:flex-row gap-5 items-center text-center md:text-left">
                 <div className=" ">
                     <h1 className=" text-4xl font-semibold">Hi, I&apos;m <span className="text-[#800020]">Aliya</span></h1>
@@ -39,25 +41,19 @@ const Home = () => {
 
 
             </div>
+            {/*buttons*/}
             <div className="flex mx-auto w-[260px] py-5 px-2 justify-between">
-                <a className="rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300
-                flex w-[68px] h-[68px]
-                "
+                <a className={roundButtonStyles}
                 href="https://github.com/AliyaSalmanova1">
-                    <FaGithub className="
-                    mx-auto self-center"/>
+                    <FaGithub className={iconStyles} />
                 </a>
-                <a className="rounded-full shadow-lg shadow-gray-400
-                flex w-[68px] h-[68px]"
+                <a className={roundButtonStyles}
                 href="https://www.linkedin.com/in/aliya-salmanova-4150711b6/">
-                    <FaLinkedinIn className="
-                    mx-auto self-center"/>
+                    <FaLinkedinIn className={iconStyles}/>
                 </a>
                 <a href="mailto:aliyasalmanova1@gmail.com"
-                className="rounded-full shadow-lg shadow-gray-400
-                flex w-[68px] h-[68px]">
-                    <FaEnvelope className="
-                    mx-auto self-center"/>
+                className={roundButtonStyles}>
+                    <FaEnvelope className={iconStyles} />
                 </a>
             </div>
         </div>
