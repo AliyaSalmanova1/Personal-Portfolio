@@ -33,13 +33,12 @@ const Navbar = () => {
 
 
     return (
-        <div className="w-screen">
-            <nav className={
-                shadow ?
-                "bg-[#fff6ec] shadow-xl z-[999] sticky top-0 h-20 w-screen px-5 flex justify-between items-center" : 
-                "bg-[#fff6ec] sticky top-0 z-[999] h-20 w-screen px-5 flex justify-between items-center"
-            }>
+        <div className="w-screen relative">
             
+            <nav className={`bg-[#fff6ec] fixed z-[999] top-0 h-20 w-screen px-5 
+             flex justify-between items-center ${shadow && "shadow-xl"}`
+            }>
+
                 <h3 className="italic text-xl text-shadow text-[#800020]">
                     Aliya Salmanova
                 </h3>
