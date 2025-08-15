@@ -39,13 +39,12 @@ const Contact = () => {
                         className="rounded-lg"
                         />
                     <h2 className='py-2 text-2xl font-semibold'>Aliya Salmanova</h2>
-                    <p>Web Developer</p>
+                    <p>Technologist – Software & Audio</p>
                     <p className='py-4'>
-                    I am available for freelance or full-time positions. 
+                    Contact me for any inquiries.
                     
                     </p>
-                    <p className="text-lg uppercase text-[#800020] mt-6 mb-2">Contact me 
-                    and let&apos;s talk</p>
+                    <p className="text-lg uppercase text-[#800020] mt-6 mb-2">Contact me</p>
 
                     <div className="flex  w-full justify-center ">
                         <div className="!w-[250px] flex py-5 px-2 justify-between">

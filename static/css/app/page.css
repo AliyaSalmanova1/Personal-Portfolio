@@ -12,6 +12,13 @@
  *
  * Released on: April 9, 2024
  */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-dancingScript: "Dancing Script", cursive;
+}
+
 
 /* FONT_START */
 @font-face {
@@ -20,6 +27,9 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+
 /* FONT_END */
 :root {
   --swiper-theme-color: #007aff;

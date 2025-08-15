@@ -18,12 +18,13 @@ const Home = () => {
             {/*flex container for text an image */}
             <div className="w-full p-5 flex  justify-center flex-col md:flex-row gap-5 items-center text-center md:text-left">
                 <div className=" ">
-                    <h1 className=" text-4xl font-semibold">Hi, I&apos;m <span className="text-[#800020]">Aliya</span></h1>
-                    <h2 className="text-3xl">a Full Stack Web Developer</h2>
+                    <h1 style={{ fontFamily: "Dancing Script, cursive" }} className=" text-6xl font-semibold">Hi, I&apos;m <span className="text-[#800020]">Aliya</span></h1>
+                    {/*<h2 className="text-3xl">a Full Stack Web Developer</h2>*/}
                     <br/>
-                    <p className="max-w-[740px]">I love building
-                         user-friendly interfaces integrating backend technologies! <br />
-                        Crafting reliable, maintainable code is always a top priority.<br/><br/>
+                    <p className="max-w-[740px]">I work at the intersection of music and technology. 
+                        Over the years, I’ve been a software developer, composer for ads, game composer, sound designer, and pianist. 
+                        I earned my bachelor’s degree in Screen Scoring from New York University, where I honed my skills in composing for multimedia. 
+                        Now, I’m pursuing a Master’s in Computer Science at DePaul University.<br/><br/>
                         <span className="text-[#800020]">Scroll below for more information.</span>
                     </p>
                 </div>

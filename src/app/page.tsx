@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar"
 import Home from "../components/Home"
 import About from "../components/About"
+import Music from "../components/Music"
 import Skills from "../components/Skills"
 import Projects from "../components/Projects"
 import Contact from "../components/Contact"
@@ -15,8 +16,10 @@ export default function MyApp() {
       <main className="w-screen z-auto">
         <Home />
         <About />
+        <Music />
         <Skills />
         <Projects />
+      
         <Contact />
       </main>
       

@@ -35,14 +35,15 @@ const Navbar = () => {
              flex justify-between items-center ${shadow && "shadow-xl"}`
             }>
 
-                <h3 className="italic text-xl text-shadow text-[#800020]">
+                <h1 style={{ fontFamily: "Dancing Script, cursive" }} className="italic font-dancingScript text-3xl text-shadow text-[#800020]">
                     Aliya Salmanova
-                </h3>
+                </h1>
 
                 <ul className="hidden md:flex">
                     <li className="ml-10"><Link href='/'>Home</Link></li>
                     <li className="ml-10"><Link href='/#about'>About</Link></li>
                     <li className="ml-10"><Link href='/#skills'>Skills</Link></li>
+                    <li className="ml-10"><Link href='/#music'>Music</Link></li>
                     <li className="ml-10"><Link href='/#projects'>Projects</Link></li>
                     <li className="ml-10"><Link href='/#contact'>Contact</Link></li>
                 </ul>
@@ -94,6 +95,9 @@ const Navbar = () => {
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#skills'>Skills</Link>
+                        </li>
+                        <li className="py-4" onClick={() => setNav(false)}>
+                            <Link href='/#music'>Music</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#projects'>Projects</Link>
