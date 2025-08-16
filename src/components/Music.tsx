@@ -41,6 +41,7 @@ const Music = () => {
     my-16">
             <p className="text-xl uppercase text-[#800020] mb-2">Music</p>
             <h1 className="text-3xl font-semibold mb-2">Music for Multimedia</h1>
+            <p className="text-2xl italic bold font-dancingScript text-[#800020] mb-2">Films - Video Games - Advertising - Trailers - Videos</p>
             <iframe
                 width="100%"
                 height="400"

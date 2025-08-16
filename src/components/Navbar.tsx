@@ -42,8 +42,9 @@ const Navbar = () => {
                 <ul className="hidden md:flex">
                     <li className="ml-10"><Link href='/'>Home</Link></li>
                     <li className="ml-10"><Link href='/#about'>About</Link></li>
-                    <li className="ml-10"><Link href='/#skills'>Skills</Link></li>
                     <li className="ml-10"><Link href='/#music'>Music</Link></li>
+                    <li className="ml-10"><Link href='/#skills'>Tech Skills</Link></li>
+                    
                     <li className="ml-10"><Link href='/#projects'>Projects</Link></li>
                     <li className="ml-10"><Link href='/#contact'>Contact</Link></li>
                 </ul>
@@ -94,11 +95,12 @@ const Navbar = () => {
                             <Link href='/#about'>About</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#skills'>Skills</Link>
-                        </li>
-                        <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#music'>Music</Link>
                         </li>
+                        <li className="py-4" onClick={() => setNav(false)}>
+                            <Link href='/#skills'>Tech Skills</Link>
+                        </li>
+                        
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#projects'>Projects</Link>
                         </li>

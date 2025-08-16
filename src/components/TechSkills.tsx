@@ -17,7 +17,7 @@ import Image from 'next/image';
 //https://icons8.com/icons/set/technology
 
 
-const Skills = () => {
+const TechSkills = () => {
 
   interface SkillObjType{
     technology: string;
@@ -85,7 +85,19 @@ const Skills = () => {
     [{technology: "SQL",
     icon: "/skillsIcons/sqlIcon.png"},
     {technology: "SASS",
-    icon: "/skillsIcons/sassIcon.png"}]
+    icon: "/skillsIcons/sassIcon.png"},
+      {technology: "Unity",
+        icon: "/skillsIcons/unity.png"},
+      {technology: "FMOD",
+        icon: "/skillsIcons/fmod2.png"},
+      {technology: "Logic Pro X",
+        icon: "/skillsIcons/logic.png"},
+      {technology: "Pro Tools",
+        icon: "/skillsIcons/protools.png"},
+      {technology: "Sibelius",
+        icon: "/skillsIcons/sibelius.png"},
+      {technology: "Wwise",
+        icon: "/skillsIcons/wwise.png"}]
   
   ])
 
@@ -109,7 +121,7 @@ const Skills = () => {
   return (
     <div id="skills" className="pt-[90px]  max-w-[1300px] mx-auto
     my-16">
-      <p className="text-xl uppercase text-[#800020] mb-2 px-5">Skills</p>
+      <p className="text-xl uppercase text-[#800020] mb-2 px-5">Tech Skills</p>
       <h1 className="text-3xl font-semibold mb-4 px-5">Technologies I Use</h1>
       <br />
       
@@ -174,4 +186,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default TechSkills;

@@ -24,7 +24,7 @@ const Home = () => {
                     <p className="max-w-[740px]">I work at the intersection of music and technology. 
                         Over the years, I’ve been a software developer, composer for ads, game composer, sound designer, and pianist. 
                         I earned my bachelor’s degree in Screen Scoring from New York University, where I honed my skills in composing for multimedia. 
-                        Now, I’m pursuing a Master’s in Computer Science at DePaul University.<br/><br/>
+                        Now, I’m pursuing a Master’s in Computer Science at Northeastern University.<br/><br/>
                         <span className="text-[#800020]">Scroll below for more information.</span>
                     </p>
                 </div>

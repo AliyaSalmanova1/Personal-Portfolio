@@ -1,0 +1,147 @@
+'use client';
+import { useState, useEffect, useRef } from 'react';
+// import Navigation from 'swiper';
+// import Pagination from 'swiper';
+// import A11y from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import {FaAngleRight, FaAngleLeft} from "react-icons/fa"
+
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import Image from 'next/image';
+
+//https://icons8.com/icons/set/technology
+
+
+const MusicTechSkills = () => {
+
+    interface SkillObjType{
+        technology: string;
+        icon: string
+    }
+    //this allows eache slider page to have a maximum of 8 skills, but can have less
+    type SkillListType = [
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?,
+        SkillObjType?
+
+    ]
+    //skills list has to be state for slider to work
+    const [skillsList, setSkillsList] = useState<SkillListType[]>([])
+
+
+    useEffect(() => {
+
+        setSkillsList([
+            
+            [
+                {technology: "FMOD",
+                    icon: "/skillsIcons/fmod2.png"},
+                {technology: "Logic Pro X",
+                    icon: "/skillsIcons/logic.png"},
+                {technology: "Pro Tools",
+                    icon: "/skillsIcons/protools.png"},
+                {technology: "Sibelius",
+                    icon: "/skillsIcons/sibelius.png"}]
+
+        ])
+
+    }, [])
+
+    const swiperRef = useRef<{
+        swiper: any; current: typeof Swiper | null }>({ current: null, swiper: null });
+
+    const handlePrev = () => {
+        swiperRef.current!.swiper.slidePrev();
+    }
+
+    const handleNext = () => {
+        swiperRef.current.swiper.slideNext();
+    };
+
+    const arrowButtonStyles = "w-10 h-10 p-1 rounded-md bg-[#fff6ec]"
+    const arrowIconStyles = "text-gray-300 h-10 w-5"
+
+
+    return (
+        <div id="skills" className="pt-[90px]  max-w-[1300px] mx-auto
+    my-16">
+            <p className="text-xl uppercase text-[#800020] mb-2 px-5">Tech Skills</p>
+            <h1 className="text-3xl font-semibold mb-4 px-5">Technologies I Use</h1>
+            <br />
+
+            <Swiper
+                ref={swiperRef}
+                modules={[Navigation, Pagination, A11y]}
+                slidesPerView={1}
+                spaceBetween={15}
+
+                breakpoints={{
+                    480: { slidesPerView: 1 },
+                    740: { slidesPerView: 1 },
+                    1275: { slidesPerView: 1 },
+                }}
+            >
+                {/*rendering the different slides */}
+                {skillsList.map((array, index) => (
+
+
+                    <SwiperSlide
+                        key={`swiperSlide${index}`}
+                        className="!grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-5 pb-8 gap-4"
+                    >
+                        {/*looping through the skills of each slide */}
+                        {array.map((arr, ind) => {
+                            if (!arr) return (<div key={`emptySkill${index}+${ind}`}></div>)
+
+                            return (
+                                <div
+                                    key={arr?.technology}
+                                    className="w-full flex justify-between items-center
+              p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+                                    <span>{arr?.technology}</span>
+                                    <Image
+                                        src={arr?.icon}
+                                        width={68}
+                                        height={68}
+                                        alt={arr?.icon }
+                                    />
+                                </div>)
+
+
+                        })}
+                    </SwiperSlide>
+
+
+                ))}
+                <br/>
+                {/*arrows*/}
+                <div className='w-full flex justify-center mt-2'>
+                    <button className={arrowButtonStyles} onClick={handlePrev}>
+                        <FaAngleLeft className={arrowIconStyles} />
+                    </button>
+                    <button className={arrowButtonStyles} onClick={handleNext}>
+                        <FaAngleRight className={arrowIconStyles} />
+                    </button>
+                </div>
+
+
+            </Swiper>
+        </div>
+    );
+};
+
+export default MusicTechSkills;
