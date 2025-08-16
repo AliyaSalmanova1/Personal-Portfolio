@@ -89,7 +89,7 @@ const TechSkills = () => {
       {technology: "Unity",
         icon: "/skillsIcons/unity.png"},
       {technology: "FMOD",
-        icon: "/skillsIcons/fmod2.png"},
+        icon: "/skillsIcons/fmod.png"},
       {technology: "Logic Pro X",
         icon: "/skillsIcons/logic.png"},
       {technology: "Pro Tools",
