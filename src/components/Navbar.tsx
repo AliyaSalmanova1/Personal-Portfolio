@@ -43,6 +43,7 @@ const Navbar = () => {
                     <li className="ml-10"><Link href='/'>Home</Link></li>
                     <li className="ml-10"><Link href='/#about'>About</Link></li>
                     <li className="ml-10"><Link href='/#music'>Music</Link></li>
+                    <li className="ml-10"><Link href='/#sound'>Sound Design</Link></li>
                     <li className="ml-10"><Link href='/#skills'>Tech Skills</Link></li>
                     
                     <li className="ml-10"><Link href='/#projects'>Projects</Link></li>
@@ -76,7 +77,7 @@ const Navbar = () => {
                     "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999]  py-6  ease-in duration-300"
                 }>
                     <div className="flex justify-between items-end mb-8 pb-4 px-5">
-                        <h3 className="italic text-xl text-shadow text-[#800020]">
+                        <h3 className=" text-xl text-shadow text-[#800020]">
                             Aliya Salmanova
                         </h3>
                         <div onClick={handleNav} 
@@ -96,6 +97,9 @@ const Navbar = () => {
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#music'>Music</Link>
+                        </li>
+                        <li className="py-4" onClick={() => setNav(false)}>
+                            <Link href='/#sound'>Sound Design</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#skills'>Tech Skills</Link>

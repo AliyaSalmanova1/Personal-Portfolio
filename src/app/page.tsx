@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar"
 import Home from "../components/Home"
 import About from "../components/About"
 import Music from "../components/Music"
+import Sound from "../components/Sound"
 import TechSkills from "../components/TechSkills"
 import MusicTechSkills from "../components/MusicTechSkills"
 import TechProjects from "../components/TechProjects"
@@ -18,6 +19,7 @@ export default function MyApp() {
         <Home />
         <About />
         <Music />
+          <Sound />
         <TechSkills />
           {/*<MusicTechSkills />*/}
         <TechProjects />

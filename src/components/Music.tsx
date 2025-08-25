@@ -39,7 +39,7 @@ const Music = () => {
     return (
         <div id="music" className=" pt-[90px] px-5 max-w-[1300px] mx-auto !min-h-screen  
     my-16">
-            <p className="text-xl uppercase text-[#800020] mb-2">Music</p>
+            <p className="text-xl uppercase text-[#800020] mb-2">Music Reel</p>
             <h1 className="text-3xl font-semibold mb-2">Music for Multimedia</h1>
             <p className="text-2xl italic bold font-dancingScript text-[#800020] mb-2">Films - Video Games - Advertising - Trailers - Videos</p>
             <iframe
