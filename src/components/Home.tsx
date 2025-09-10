@@ -1,7 +1,9 @@
 import React from "react"
 import Image from "next/image"
+import Link from 'next/link';
 
 import {FaGithub, FaLinkedinIn, FaEnvelope} from "react-icons/fa"
+import {HiOutlineChevronDoubleDown} from "react-icons/hi";
 
 
 const Home = () => {
@@ -12,11 +14,12 @@ const Home = () => {
     return (
      
         
-        <div className="w-screen min-h-screen flex flex-col justify-center
-        mt-[-80px] pt-[160px]  relative max-w-[1200px] mx-auto
+        <div className="w-screen min-h-screen flex flex-col  justify-center
+        mt-[-80px] pt-[160px]  0 relative max-w-[1200px] mx-auto
         ">
             {/*flex container for text an image */}
-            <div className="w-full p-5 flex  justify-center flex-col md:flex-row gap-5 items-center text-center md:text-left">
+            <div className="w-full md:mb-16
+            p-5 flex  justify-center flex-col md:flex-row gap-5  items-center text-center md:text-left">
                 <div className=" ">
                     <h1 style={{ fontFamily: "Dancing Script, cursive" }} className=" text-6xl font-semibold">Hi, I&apos;m <span className="text-[#800020]">Aliya</span></h1>
                     {/*<h2 className="text-3xl">a Full Stack Web Developer</h2>*/}
@@ -25,7 +28,7 @@ const Home = () => {
                         Over the years, I’ve been a software developer, composer for ads, game composer, sound designer, and pianist. 
                         I earned my bachelor’s degree in Screen Scoring from New York University, where I honed my skills in composing for multimedia. 
                         Now, I’m pursuing a Master’s in Computer Science at Northeastern University.<br/><br/>
-                        <span className="text-[#800020]">Scroll below for more information.</span>
+                        
                     </p>
                 </div>
               
@@ -42,7 +45,10 @@ const Home = () => {
 
 
             </div>
-            {/*buttons*/}
+            
+            {/*<h3 className="text-xl uppercase text-center text-[#800020]">Scroll bellow to see my music reel, sound design work,
+            skills, and technical projects</h3>*/}
+            {/*
             <div className="flex mx-auto w-[260px] py-5 px-2 justify-between">
                 <a className={roundButtonStyles}
                 href="https://github.com/AliyaSalmanova1">
@@ -57,6 +63,29 @@ const Home = () => {
                     <FaEnvelope className={iconStyles} />
                 </a>
             </div>
+            */}
+            <div>
+                <br/>
+                <div className="text-[#800020]  font-semibold text-2xl font-dancingScript text-center">
+                    <span>Music reel, sound design samples, skills, and technical projects are right below</span>
+                </div>
+
+
+                <div className="flex py-5 px-2" >
+                    <Link href='/#music' scroll={true} className="inline-block
+                    rounded-full shadow-lg shadow-gray-400 p-4 h-30 w-30
+                    hover:scale-110 ease-in duration-200 
+                    mx-auto mt-5 bg-[#fff6ec]" >
+
+                        <HiOutlineChevronDoubleDown
+                            size={30} color="#800020"
+                        />
+
+
+                    </Link>
+                </div>
+            </div>
+            
         </div>
 
         
