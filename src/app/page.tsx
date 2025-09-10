@@ -17,12 +17,12 @@ export default function MyApp() {
   
       <main className="w-screen z-auto">
         <Home />
-        <About />
         <Music />
           <Sound />
         <TechSkills />
           {/*<MusicTechSkills />*/}
         <TechProjects />
+          <About />
       
         <Contact />
       </main>
