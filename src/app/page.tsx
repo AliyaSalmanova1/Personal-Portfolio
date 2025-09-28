@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar"
 import Home from "../components/Home"
 import About from "../components/About"
 import Music from "../components/Music"
+import ShowReel from "../components/ShowReel"
 import Sound from "../components/Sound"
 import TechSkills from "../components/TechSkills"
 import MusicTechSkills from "../components/MusicTechSkills"
@@ -18,6 +19,7 @@ export default function MyApp() {
       <main className="w-screen z-auto">
         <Home />
         <Music />
+        <ShowReel />
           <Sound />
         <TechSkills />
           {/*<MusicTechSkills />*/}

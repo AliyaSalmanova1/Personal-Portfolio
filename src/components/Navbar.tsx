@@ -43,6 +43,7 @@ const Navbar = () => {
                     <li className="ml-10"><Link href='/'>Home</Link></li>
                     
                     <li className="ml-10"><Link href='/#music'>Music</Link></li>
+                    <li className="ml-10"><Link href='/#showreel'>Show Reel</Link></li>
                     <li className="ml-10"><Link href='/#sound'>Sound Design</Link></li>
                     <li className="ml-10"><Link href='/#skills'>Tech Skills</Link></li>
                     
@@ -96,6 +97,9 @@ const Navbar = () => {
                         
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#music'>Music</Link>
+                        </li>
+                        <li className="py-4" onClick={() => setNav(false)}>
+                            <Link href='/#showreel'>Show Reel</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#sound'>Sound Design</Link>
