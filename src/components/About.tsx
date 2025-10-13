@@ -35,8 +35,7 @@ const About = () => {
                         I&apos;m a software developer with projects ranging from building 
                         interactive kiosk software to creating tools that streamline development workflows. 
                         I&apos;ve worked in web technologies and integrated audio programming, 
-                        and I&apos;ve combined these skills to work on sound systems for games released on Steam, 
-                        including Do No Harm and Lunar Ascendant. 
+                        and I&apos;ve combined these skills to work on sound systems for games released on Steam.
                         My background lets me bridge creative and technical disciplines.
                     </p>
                     <br/>
