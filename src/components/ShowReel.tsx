@@ -10,7 +10,7 @@ const ShowReel = () => {
    
 
     return (
-        <div id="showreel" className="pt-[90px] px-5 max-w-[1300px] mx-auto ">
+        <div id="scoringreel" className="pt-[90px] px-5 max-w-[1300px] mx-auto ">
   <p className="text-xl uppercase text-[var(--pink-color)] mb-2">Video Samples With Music</p>
   <h1 className="text-3xl font-semibold mb-2">Video Reel</h1>
   <p className="text-2xl italic bold font-dancingScript text-[var(--pink-color)] mb-2">

@@ -11,7 +11,7 @@ const Sound = () => {
     
 
     return (
-        <div id="sound" className=" pt-[90px] px-5 max-w-[1300px] mx-auto   
+        <div id="sounddesign" className=" pt-[90px] px-5 max-w-[1300px] mx-auto   
     my-16">
             <p className="text-xl uppercase text-[var(--pink-color)] mb-2">Sound Design</p>
             <h1 className="text-3xl font-semibold mb-2">Sound Design for Games</h1>

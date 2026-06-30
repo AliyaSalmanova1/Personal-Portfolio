@@ -52,7 +52,7 @@ const WebDev = () => {
 ]
 
   return (
-    <div id="projects" className=" pt-[90px] px-5 max-w-[1300px] mx-auto
+    <div id="webdev" className=" pt-[90px] px-5 max-w-[1300px] mx-auto
     my-16">
       <p className="text-xl uppercase text-[var(--pink-color)] mb-2">Web Dev Samples</p>
       <h1 className="text-3xl font-semibold mb-2">Apps I&apos;ve Built</h1>
@@ -75,7 +75,7 @@ const WebDev = () => {
                         />
                         <div className="absolute inset-0 hidden group-hover:flex flex-col justify-center items-center">
                             <Link href={projInfo.projectUrl} target="_blank">
-                                <p className="px-5 py-2 bg-[#fff6ec] rounded-lg text-[#800020]">View</p>
+                                <p className="px-5 py-2 bg-[#fff6ec] rounded-lg text-[#800020]">{projInfo.viewText}</p>
                             </Link>
                         </div>
                     </div>

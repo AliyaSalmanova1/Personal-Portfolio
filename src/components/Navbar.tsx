@@ -39,14 +39,14 @@ const Navbar = () => {
                 <ul className="flex flex-wrap justify-between items-center w-full max-w-[1300px] gap-y-2 text-[var(--pink-color)]">
                     <li className="px-3"><Link href='/'>Home</Link></li>
                     <li className="px-3"><Link href='/#gamedev'>Game Dev</Link></li>
-                    <li className="px-3"><Link href='/#showreel'>Scoring Reel</Link></li>
+                    <li className="px-3"><Link href='/#scoringreel'>Scoring Reel</Link></li>
                     <li className="px-3"><Link href='/#music'>Music</Link></li>
                 
-                    <li className="px-3"><Link href='/#projects'>Web Dev</Link></li>
-                    <li className="px-3"><Link href='/#sound'>Sound Design</Link></li>
+                    <li className="px-3"><Link href='/#webdev'>Web Dev</Link></li>
+                    <li className="px-3"><Link href='/#sounddesign'>Sound Design</Link></li>
                 
-                    <li className="px-3"><Link href='/#skills'>Tech Skills</Link></li>
-                    <li className="px-3"><Link href='/#about'>More</Link></li>
+                    <li className="px-3"><Link href='/#techskills'>Tech Skills</Link></li>
+                    <li className="px-3"><Link href='/#moreinfo'>More</Link></li>
                     <li className="px-3"><Link href='/#contact'>Contact</Link></li>
                 </ul>
 
@@ -86,7 +86,7 @@ const Navbar = () => {
                             <Link href='/#gamedev'>Game Dev</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#showreel'>Show Reel</Link>
+                            <Link href='/#scoringreel'>Show Reel</Link>
                         </li>
                         
                         <li className="py-4" onClick={() => setNav(false)}>
@@ -94,18 +94,18 @@ const Navbar = () => {
                         </li>
                         
                         <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#sound'>Sound Design</Link>
+                            <Link href='/#sounddesign'>Sound Design</Link>
                         </li>
                         
                         
                         <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#projects'>Web Dev</Link>
+                            <Link href='/#webdev'>Web Dev</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#skills'>Tech Skills</Link>
+                            <Link href='/#techskills'>Tech Skills</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#about'>More</Link>
+                            <Link href='/#moreinfo'>More</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#contact'>Contact</Link>
