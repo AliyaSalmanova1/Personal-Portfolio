@@ -127,7 +127,7 @@ const TechSkills = () => {
     <div id="techskills" className="pt-[90px]  max-w-[1300px] mx-auto
     my-16">
       <p className="text-xl uppercase text-[var(--pink-color)] mb-2 px-5">Tech Skills</p>
-      <h1 style={{ fontFamily: "Dancing Script, cursive" }} className="text-3xl mb-4 px-5 text-[var(--very-light-pink-color)] ">Technologies I've Used</h1>
+      <h1 style={{ fontFamily: "Dancing Script, cursive" }} className="text-3xl mb-4 px-5 text-[var(--very-light-pink-color)] ">Technologies I&apos;ve Used</h1>
       <br />
       
       <Swiper
