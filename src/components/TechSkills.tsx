@@ -178,14 +178,14 @@ const TechSkills = () => {
         {/*arrows*/}
         <div className='w-full flex justify-center mt-2 gap-1'>
           <button
-            className={`${arrowButtonStyles} ${isFirst ? 'opacity-30 cursor-not-allowed' : 'opacity-100 cursor-pointer'}`}
+            className={`${arrowButtonStyles} ${isFirst ? 'opacity-30' : 'opacity-100 cursor-pointer'}`}
             onClick={handlePrev}
             disabled={isFirst}
           >
             <FaAngleLeft className={arrowIconStyles} />
           </button>
           <button
-            className={`${arrowButtonStyles} ${isLast ? 'opacity-30 cursor-not-allowed' : 'opacity-100 cursor-pointer'}`}
+            className={`${arrowButtonStyles} ${isLast ? 'opacity-30' : 'opacity-100 cursor-pointer'}`}
             onClick={handleNext}
             disabled={isLast}
           >
