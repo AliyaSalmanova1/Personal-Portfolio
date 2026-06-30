@@ -43,19 +43,19 @@ const GameDev = () => {
         viewText: ""
     },
     {
-        title: "Fairy Game (To Be Renamed)",
-        bgImage: "/projects/comingSoon.jpg",
-        projectUrl: "",
-        info: "Solo developing a fairy-themed game in Unity with self-created assets.",
-        viewText: ""
-    },
-    {
         title: "Bunny Game (To Be Renamed)",
         bgImage: "/projects/comingSoon.jpg",
         projectUrl: "",
         info: "Working with a team to create a grotesque puzzle game in Unity. Roles: programmer, composer, sound designer.",
         viewText: ""
     },
+    {
+        title: "Fairy Game (To Be Renamed)",
+        bgImage: "/projects/comingSoon.jpg",
+        projectUrl: "",
+        info: "Solo developing a fairy-themed game in Unity with self-created assets.",
+        viewText: ""
+    }
     
 ]
 
