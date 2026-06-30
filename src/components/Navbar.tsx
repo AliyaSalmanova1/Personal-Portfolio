@@ -36,7 +36,7 @@ const Navbar = () => {
 
 
 
-                <ul className="flex flex-wrap justify-between items-center w-full max-w-[1300px] gap-y-2 text-[var(--pink-color)]">
+                <ul className="flex flex-wrap justify-center lg:justify-between items-center w-full max-w-[1300px] gap-x-1 gap-y-2 text-[var(--pink-color)]">
                     <li className="px-3"><Link href='/'>Home</Link></li>
                     <li className="px-3"><Link href='/#gamedev'>Game Dev</Link></li>
                     <li className="px-3"><Link href='/#scoringreel'>Scoring Reel</Link></li>

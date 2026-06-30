@@ -71,10 +71,10 @@ const WebDev = () => {
                             src={projInfo.bgImage}
                             alt={projInfo.title}
                             fill
-                            className="object-cover group-hover:opacity-15 transition-opacity"
+                            className="object-cover group-hover:opacity-15"
                         />
                         <div className="absolute inset-0 hidden group-hover:flex flex-col justify-center items-center">
-                            <Link href={projInfo.projectUrl} target="_blank">
+                            <Link href={projInfo.projectUrl}>
                                 <p className="px-5 py-2 bg-[#fff6ec] rounded-lg text-[#800020]">{projInfo.viewText}</p>
                             </Link>
                         </div>

@@ -16,7 +16,7 @@ const Contact = () => {
 
     const formRef: MutableRefObject<HTMLFormElement | null> = useRef(null);
 
-    const inputStyles = "border-2 rounded-lg p-3 border-gray-300 w-full mt-2 focus-visible:outline-[#a64d63]" 
+    const inputStyles = "border-2 rounded-lg p-3 border-gray-300 w-full mt-2 focus-visible:outline-[#a64d63] text-black"
     const contactButtonsStyles = "rounded-full shadow-lg shadow-gray-400 cursor:pointer hover:scale-110 ease-in duration-300 flex w-[68px] h-[68px]"
 
 
@@ -141,7 +141,7 @@ const Contact = () => {
                     >
                     
                     <HiOutlineChevronDoubleUp 
-                    size={30} color="var(--background-color)"
+                    size={30} color="var(--text-color)"
                     />
                 
                         

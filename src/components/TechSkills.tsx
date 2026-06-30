@@ -103,6 +103,8 @@ const TechSkills = () => {
 
   }, [])
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const swiperRef = useRef<{
     swiper: any; current: typeof Swiper | null }>({ current: null, swiper: null });
 
@@ -113,8 +115,11 @@ const TechSkills = () => {
   const handleNext = () => {
     swiperRef.current.swiper.slideNext();
   };
-  
-  const arrowButtonStyles = "w-10 h-10 p-1 rounded-md bg-[var(--very-light-pink-color)] text-[var(--pink-color)] flex justify-center items-center"
+
+  const isFirst = currentIndex === 0;
+  const isLast = currentIndex === skillsList.length - 1;
+
+  const arrowButtonStyles = "w-10 h-10 p-1 rounded-md bg-[var(--very-light-pink-color)] text-[var(--pink-color)] flex justify-center items-center transition-opacity"
   const arrowIconStyles = "text-[var(--pink-color)] h-10 w-5"
   
 
@@ -130,6 +135,7 @@ const TechSkills = () => {
         modules={[Navigation, Pagination, A11y]}
         slidesPerView={1}
         spaceBetween={15}
+        onSlideChange={(swiper) => setCurrentIndex(swiper.activeIndex)}
        
         breakpoints={{
           480: { slidesPerView: 1 },
@@ -171,10 +177,18 @@ const TechSkills = () => {
         <br/>
         {/*arrows*/}
         <div className='w-full flex justify-center mt-2 gap-1'>
-          <button className={arrowButtonStyles} onClick={handlePrev}>
+          <button
+            className={`${arrowButtonStyles} ${isFirst ? 'opacity-30 cursor-not-allowed' : 'opacity-100 cursor-pointer'}`}
+            onClick={handlePrev}
+            disabled={isFirst}
+          >
             <FaAngleLeft className={arrowIconStyles} />
           </button>
-          <button className={arrowButtonStyles} onClick={handleNext}>
+          <button
+            className={`${arrowButtonStyles} ${isLast ? 'opacity-30 cursor-not-allowed' : 'opacity-100 cursor-pointer'}`}
+            onClick={handleNext}
+            disabled={isLast}
+          >
             <FaAngleRight className={arrowIconStyles} />
           </button>
         </div>

@@ -21,32 +21,31 @@ const About = () => {
                 <div className="max-w-[900px] mx-auto text-[var(--text-color)]">
 
                     <br/>
-                    <p>My music has been performed at New York City venues such as Roulette and National Sawdust,
-                        as well as at Opera Omaha’s ONE Festival.
-                        I&apos;ve collaborated on multimedia projects with directors from NYU Tisch,
-                        and my works have been performed by orchestras and realized through self-made mockups crafted with music technology.
-                        I&apos;ve also performed piano at festivals and on television,
-                        and written and performed live scores for silent films.
-                    </p>
-                    
-                    <br/>
                     <p>
-                        Alongside composing, 
-                        I&apos;m a software developer with projects ranging from building 
-                        interactive kiosk software to creating tools that streamline development workflows. 
-                        I&apos;ve worked in web technologies and integrated audio programming, 
-                        and I&apos;ve combined these skills to work on sound systems for games released on Steam.
-                        My background lets me bridge creative and technical disciplines.
+                        My music has been performed at New York City venues such as DiMenna Center, Roulette, and National Sawdust,
+                        as well as at Opera Omaha’s ONE Festival. I&apos;ve written for concert, film, games, and multimedia projects,
+                        including recent commissions from HyperCube and Ipse for my piece <i>Fairies</i>. I&apos;ve also collaborated with
+                        directors from NYU Tisch, performed piano at festivals and on television, and written and performed live scores
+                        for silent films.
                     </p>
+
                     <br/>
+
                     <p>
-                        I&apos;ve studied with acclaimed music editor Suzana Peric, 
-                        composer Alba Torremocha, and concert music with Missy Mazzoli, 
-                        and I&apos;ve worked as a music theory and piano instructor. 
-                        I&apos;m both a logical and creative thinker, and in my free time I love singing, 
-                        exploring philosophy and psychology, 
-                        enjoying the New York arts scene, and fussing over my dog.
+                        Alongside composing, I&apos;ve been a software developer with experience at an interactive kiosk software company,
+                        where I built touchscreen software for client-facing events. In game development, I&apos;ve worked as a
+                        composer and technical sound designer at a game development company, combining Unity, C#, FMOD, and audio implementation for games
+                        released on Steam. My background lets me bridge creative and technical disciplines.
                     </p>
+
+                    <br/>
+
+                    <p>
+                        I&apos;ve studied with acclaimed music editor Suzana Peric, composer Alba Torremocha, and concert music with Missy Mazzoli,
+                        and I&apos;ve also worked as a music theory and piano instructor. I&apos;m both a logical and creative thinker, and in my free
+                        time I like to sing, study philosophy and psychology, enjoy the New York arts scene, and fuss over my dog.
+                    </p>
+
 
                 </div>
 

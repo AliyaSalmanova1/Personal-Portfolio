@@ -61,7 +61,11 @@ const Music = () => {
                 title="ReelCrafter Music Player"
             />*/}
             <br/>
-            {/*projects' grid container*/}
+            <div className="mt-4 border border-[#a64d63] rounded-xl p-4 text-sm text-[var(--text-color)] opacity-70 leading-relaxed">
+                <p>
+                    <span className="text-[var(--pink-color)]">♥</span> <span className="font-semibold">Usage Notice:</span> All tracks are protected by copyright. You may not use, reproduce, distribute, or sync any of these tracks without direct written permission from the composer (me!). Permission may be granted on a case-by-case basis for tracks that have not already been exclusively licensed or sold, provided that proper credit is given and, in most cases, appropriate compensation is arranged. To inquire about licensing, please get in touch directly. <span className="text-[var(--pink-color)]">♥</span>
+                </p>
+            </div>
             {/*<div className="!grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 px-5 pb-8 gap-4">
                 
                 {projectsInfo.map((projInfo, index) => {
