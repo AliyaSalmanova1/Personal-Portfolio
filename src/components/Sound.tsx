@@ -16,7 +16,7 @@ const Sound = () => {
             <p className="text-xl uppercase text-[var(--pink-color)] mb-2">Sound Design</p>
             <h1 className="text-3xl font-semibold mb-2">Sound Design for Games</h1>
             <br/>
-            <p className="text-2xl   underline font-dancingScript text-[var(--pink-color)] mb-2">
+            <p className="text-2xl   underline font-dancingScript text-[var(--text-color)] mb-2 ml-1">
                 <Link href='https://drive.google.com/drive/folders/1SaqSmy6Q6T5tzX9AzcDUxDzcIP7Pd0e4?usp=sharing'>Sound design samples can be seen here</Link>
             </p>
 

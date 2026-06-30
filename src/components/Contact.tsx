@@ -24,7 +24,7 @@ const Contact = () => {
         <div id='contact' className="contact max-w-[1300px] mx-auto shrink-1
          my-16 pt-[90px] ">
             <p className="px-5 text-xl uppercase text-[var(--pink-color)] mb-2">Contact</p>
-            <h1 className="px-5 text-3xl font-semibold mb-8">Get In Touch With Me</h1>
+            <p style={{ fontFamily: "Dancing Script, cursive" }} className="px-5 text-3xl mb-8 text-[var(--text-color)]">Get In Touch</p>
             {/*sections' container*/}
             <div  className="pt-5 px-5 pb-8 flex flex-col lg:flex-row gap-10">
                 {/*non-form section */}
@@ -40,11 +40,10 @@ const Contact = () => {
                         />
                     <h2 className='py-2 text-2xl font-semibold'>Aliya Salmanova</h2>
                     <p>Technologist – Software & Audio</p>
-                    <p className='py-4'>
-                    Contact me for any inquiries.
+                    <p style={{ fontFamily: "Dancing Script, cursive" }} className='py-4 text-[var(--text-color)] text-2xl'>Contact me for inquiries
                     
                     </p>
-                    <p className="text-lg uppercase text-[var(--pink-color)] mt-6 mb-2">Contact me</p>
+                    <p className="text-lg uppercase text-[var(--pink-color)] mt-6 mb-2">Links</p>
 
                     <div className="flex  w-full justify-center ">
                         <div className="!w-[250px] flex py-5 px-2 justify-between">
@@ -119,8 +118,8 @@ const Contact = () => {
                         required></textarea>
                     </label>
                     
-                    <button 
-                    className="w-full inline-block text-[var(--text-color)] p-4 rounded-lg
+                    <button style={{ fontFamily: "Dancing Script, cursive" }}
+                    className="w-full text-2xl inline-block text-[var(--text-color)] p-4 rounded-lg
                     bg-gradient-to-r from-[var(--dark-pink-color)] to-[var(--light-pink-color)] 
                     active:opacity-50"
                     type="submit">

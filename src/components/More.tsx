@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div id="moreinfo" className="w-screen flex flex-col items-center
         my-16 pt-[90px]">
-            <h3 className="text-3xl font-bold uppercase text-center text-[var(--pink-color)]">More Info </h3>
+            <h3 className="text-3xl font-bold uppercase text-center text-[var(--pink-color)]">More About Background </h3>
             {/*container with dashed border-x */}
 
             <div className="max-w-[1300px] w-full grow shrink-1

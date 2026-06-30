@@ -25,10 +25,10 @@ const Home = () => {
                     {/*<h2 className="text-3xl">a Full Stack Web Developer</h2>*/}
                     <br/>
                     <p className="max-w-[740px] text-[var(--text-color)]">Intersecting music and technology. 
-                        Have been a software developer, composer for ads, game composer, Unity programmer, game sound designer, and pianist. 
-                        Bachelor’s degree is from New York University Screen Scoring (aka music theory + writing music for multimedia). 
-                        In the midst of my Master’s degree in Computer Science at Northeastern University. Currently working for Juan Pablo Grimminck. 
-                        Open for more commissions.<br/><br/>
+                        Have worked as a software developer, composer for ads, game composer, Unity programmer, game sound designer, and pianist. 
+                        Bachelor’s degree is from New York University Screen Scoring (music theory + writing music for multimedia). 
+                        Am in the midst of my Master’s degree in Computer Science at Northeastern University. Currently working for Juan Pablo Grimminck. 
+                        Open for commissions.<br/><br/>
                         
                     </p>
                 </div>
