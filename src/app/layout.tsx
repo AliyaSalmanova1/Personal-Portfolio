@@ -6,8 +6,15 @@ import Navbar from "../components/Navbar"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Aliya S. Portfolio",
-  description: "Website made by Aliya Salmanova",
+  title: "Aliya Salmanova | Portfolio",
+  description: "Software developer, composer, and sound designer. Intersecting music and technology.",
+  openGraph: {
+    title: "Aliya Salmanova | Portfolio",
+    description: "Software developer, composer, and sound designer. Intersecting music and technology.",
+    url: "https://aliya-s-portfolio.vercel.app",
+    siteName: "Aliya Salmanova Portfolio",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
