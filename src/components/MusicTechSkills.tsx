@@ -9,9 +9,7 @@ import {FaAngleRight, FaAngleLeft} from "react-icons/fa"
 
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
 import Image from 'next/image';
 
 //https://icons8.com/icons/set/technology

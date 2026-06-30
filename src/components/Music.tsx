@@ -39,15 +39,14 @@ const Music = () => {
     return (
         <div id="music" className=" pt-[90px] px-5 max-w-[1300px] mx-auto !min-h-screen  
     my-16">
-            <p className="text-xl uppercase text-[#800020] mb-2">Music Reel</p>
+            <p className="text-xl uppercase text-[var(--pink-color)] mb-2">Music Reel</p>
             <h1 className="text-3xl font-semibold mb-2">Music for Multimedia</h1>
-            <p className="text-2xl italic bold font-dancingScript text-[#800020] mb-2">Films - Video Games - Advertising - Trailers - Videos</p>
+            <p className="text-2xl italic bold font-dancingScript text-[var(--pink-color)] mb-2">Films - Video Games - Advertising - Trailers - Videos</p>
             <iframe
                 width="100%"
-                height="400"
                 scrolling="no"
                 frameBorder="no"
-                className="!min-h-screen !bg-[#fff6ec] w-full "
+                className="bg-[#fff6ec] w-full h-[1400px] md:h-[900px] lg:h-[950px]"
                 src="https://play.reelcrafter.com/embed/2769aa4d-371d-40e8-8bbb-de6296c05372">
             </iframe>
             {/*<iframe

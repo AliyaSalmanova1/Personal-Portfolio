@@ -8,17 +8,17 @@ const About = () => {
     return (
         <div id="about" className="w-screen flex flex-col items-center
         my-16 pt-[90px]">
-            <h3 className="text-3xl font-bold uppercase text-center text-[#800020]">More About Me </h3>
+            <h3 className="text-3xl font-bold uppercase text-center text-[var(--pink-color)]">More Info </h3>
             {/*container with dashed border-x */}
 
             <div className="max-w-[1300px] w-full grow shrink-1
-            lg:border-x-2  border-[#cc99a6] border-opacity-3 
+            lg:border-x-2  border-[var(--pink-color)] border-opacity-3 
             border-dashed 
             flex flex-col justify-center
             text-center mx-auto  px-5 ">
 
                 {/*container for paragraphs*/}
-                <div className="max-w-[900px] mx-auto">
+                <div className="max-w-[900px] mx-auto text-[var(--text-color)]">
 
                     <br/>
                     <p>My music has been performed at New York City venues such as Roulette and National Sawdust,

@@ -15,19 +15,20 @@ const Home = () => {
      
         
         <div className="w-screen min-h-screen flex flex-col  justify-center
-        mt-[-80px] pt-[160px]  0 relative max-w-[1200px] mx-auto
+        mt-[-80px] pt-[160px]  0 relative max-w-[1300px] mx-auto
         ">
             {/*flex container for text an image */}
             <div className="w-full md:mb-16
-            p-5 flex  justify-center flex-col md:flex-row gap-5  items-center text-center md:text-left">
-                <div className=" ">
-                    <h1 style={{ fontFamily: "Dancing Script, cursive" }} className=" text-6xl font-semibold">Hi, I&apos;m <span className="text-[#800020]">Aliya</span></h1>
+            p-5 flex justify-between flex-col md:flex-row gap-5 items-center text-center md:text-left">
+                <div className="flex-1">
+                    <h1 style={{ fontFamily: "Dancing Script, cursive" }} className=" text-6xl font-semibold text-[var(--pink-color)]">Aliya Salmanova</h1>
                     {/*<h2 className="text-3xl">a Full Stack Web Developer</h2>*/}
                     <br/>
-                    <p className="max-w-[740px]">I work at the intersection of music and technology. 
-                        Over the years, I’ve been a software developer, composer for ads, game composer, sound designer, and pianist. 
-                        I earned my bachelor’s degree in Screen Scoring from New York University, where I honed my skills in composing for multimedia. 
-                        Now, I’m pursuing a Master’s in Computer Science at Northeastern University.<br/><br/>
+                    <p className="max-w-[740px] text-[var(--text-color)]">Intersecting music and technology. 
+                        Have been a software developer, composer for ads, game composer, Unity programmer, game sound designer, and pianist. 
+                        Bachelor’s degree is from New York University Screen Scoring (aka music theory + writing music for multimedia). 
+                        In the midst of my Master’s degree in Computer Science at Northeastern University. Currently working for Juan Pablo Grimminck. 
+                        Open for more commissions.<br/><br/>
                         
                     </p>
                 </div>
@@ -35,10 +36,10 @@ const Home = () => {
                 
                 <div className="shrink-0" style={{ position: "relative", width: `${300}px`, height: `${300}px` }}>
                     <Image
-                        src="/profilePhoto.jpg"
+                        src="/profilePhotoNew2.png"
                         alt="photo"
                         fill
-                        className="rounded-full shrink-0 max-w-[300px] max-h-[300px]"
+                        className="rounded-full shrink-0 max-w-[300px] max-h-[300px] border-4 border-[var(--dark-pink-color)]"
                         style={{ objectFit: "cover" }}
                     />
                 </div>
@@ -66,8 +67,8 @@ const Home = () => {
             */}
             <div>
                 <br/>
-                <div className="text-[#800020]  font-semibold text-2xl font-dancingScript text-center">
-                    <span>Music reel, sound design samples, skills, and technical projects are right below</span>
+                <div className="text-[var(--pink-color)]  font-semibold text-2xl font-dancingScript text-center">
+                    <span>SCROLL DOWN</span>
                 </div>
 
 
@@ -75,10 +76,10 @@ const Home = () => {
                     <Link href='/#music' scroll={true} className="inline-block
                     rounded-full shadow-lg shadow-gray-400 p-4 h-30 w-30
                     hover:scale-110 ease-in duration-200 
-                    mx-auto mt-5 bg-[#fff6ec]" >
+                    mx-auto mt-5 bg-[var(--background-color)]" >
 
                         <HiOutlineChevronDoubleDown
-                            size={30} color="#800020"
+                            size={30} color="var(--pink-color)"
                         />
 
 

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- black background -->
+  <rect width="32" height="32" fill="#000000" rx="8"/>
+  <!-- briefcase body -->
+  <rect x="4" y="13" width="24" height="15" rx="2" fill="#FF69B4"/>
+  <!-- briefcase handle -->
+  <path d="M11 13V10a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3" stroke="#FF69B4" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- center clasp -->
+  <rect x="13.5" y="17.5" width="5" height="4" rx="1" fill="#000000"/>
+</svg>

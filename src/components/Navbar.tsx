@@ -29,38 +29,26 @@ const Navbar = () => {
 
 
     return (
-        <div className="w-screen relative">
+        <div className="w-screen relative flex ">
             
-            <nav className={`bg-[#fff6ec] fixed z-[999] top-0 h-20 w-screen px-5 
-             flex justify-between items-center ${shadow && "shadow-xl"}`
-            }>
+            <nav className={`bg-[#000000] fixed z-[999] top-0 min-h-16 h-auto w-screen px-5 py-3
+             flex justify-center items-center shadow-xl shadow-gray-300 transition-shadow ease-in duration-300`}>
 
-                <h1 style={{ fontFamily: "Dancing Script, cursive" }} className="italic font-dancingScript text-3xl text-shadow text-[#800020]">
-                    Aliya Salmanova
-                </h1>
 
-                <ul className="hidden md:flex">
-                    <li className="ml-10"><Link href='/'>Home</Link></li>
-                    
-                    <li className="ml-10"><Link href='/#music'>Music</Link></li>
-                    <li className="ml-10"><Link href='/#showreel'>Show Reel</Link></li>
-                    <li className="ml-10"><Link href='/#sound'>Sound Design</Link></li>
-                    <li className="ml-10"><Link href='/#skills'>Tech Skills</Link></li>
-                    
-                    <li className="ml-10"><Link href='/#projects'>Projects</Link></li>
-                    <li className="ml-10"><Link href='/#about'>More</Link></li>
-                    <li className="ml-10"><Link href='/#contact'>Contact</Link></li>
+
+                <ul className="flex flex-wrap justify-between items-center w-full max-w-[1300px] gap-y-2 text-[var(--pink-color)]">
+                    <li className="px-3"><Link href='/'>Home</Link></li>
+                    <li className="px-3"><Link href='/#gamedev'>Game Dev</Link></li>
+                    <li className="px-3"><Link href='/#showreel'>Scoring Reel</Link></li>
+                    <li className="px-3"><Link href='/#music'>Music</Link></li>
+                
+                    <li className="px-3"><Link href='/#projects'>Web Dev</Link></li>
+                    <li className="px-3"><Link href='/#sound'>Sound Design</Link></li>
+                
+                    <li className="px-3"><Link href='/#skills'>Tech Skills</Link></li>
+                    <li className="px-3"><Link href='/#about'>More</Link></li>
+                    <li className="px-3"><Link href='/#contact'>Contact</Link></li>
                 </ul>
-
-                {/*hamburger*/}
-
-                <div
-          
-                    onClick={handleNav}
-                    className='md:hidden'
-                >
-                    <AiOutlineMenu size={25} />
-                </div>
 
             </nav>
 
@@ -68,8 +56,8 @@ const Navbar = () => {
             {/* Overlay */}
 
             <div className={
-            nav? "bg-[#fff6ec] z-[999] md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" :
-            "z-[999] bg-[#fff6ec]"
+            nav? "bg-[#FF69B4] z-[999] md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" :
+            "z-[999] bg-[#FF69B4]"
             }>
 
                 {/* Side Drawer Menu */}
@@ -79,7 +67,7 @@ const Navbar = () => {
                     "bg-[#fff6ec] fixed left-[-100%] top-0 z-[999]  py-6  ease-in duration-300"
                 }>
                     <div className="flex justify-between items-end mb-8 pb-4 px-5">
-                        <h3 className=" text-xl text-shadow text-[#800020]">
+                        <h3 className=" text-xl text-shadow text-[#FF69B4]">
                             Aliya Salmanova
                         </h3>
                         <div onClick={handleNav} 
@@ -94,22 +82,27 @@ const Navbar = () => {
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/'>Home</Link>
                         </li>
-                        
                         <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#music'>Music</Link>
+                            <Link href='/#gamedev'>Game Dev</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#showreel'>Show Reel</Link>
                         </li>
+                        
                         <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#sound'>Sound Design</Link>
-                        </li>
-                        <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#skills'>Tech Skills</Link>
+                            <Link href='/#music'>Music</Link>
                         </li>
                         
                         <li className="py-4" onClick={() => setNav(false)}>
-                            <Link href='/#projects'>Projects</Link>
+                            <Link href='/#sound'>Sound Design</Link>
+                        </li>
+                        
+                        
+                        <li className="py-4" onClick={() => setNav(false)}>
+                            <Link href='/#projects'>Web Dev</Link>
+                        </li>
+                        <li className="py-4" onClick={() => setNav(false)}>
+                            <Link href='/#skills'>Tech Skills</Link>
                         </li>
                         <li className="py-4" onClick={() => setNav(false)}>
                             <Link href='/#about'>More</Link>

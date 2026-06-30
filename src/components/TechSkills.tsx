@@ -114,15 +114,15 @@ const TechSkills = () => {
     swiperRef.current.swiper.slideNext();
   };
   
-  const arrowButtonStyles = "w-10 h-10 p-1 rounded-md bg-[#fff6ec]"
-  const arrowIconStyles = "text-gray-300 h-10 w-5"
+  const arrowButtonStyles = "w-10 h-10 p-1 rounded-md bg-[var(--very-light-pink-color)] text-[var(--pink-color)] flex justify-center items-center"
+  const arrowIconStyles = "text-[var(--pink-color)] h-10 w-5"
   
 
   return (
     <div id="skills" className="pt-[90px]  max-w-[1300px] mx-auto
     my-16">
-      <p className="text-xl uppercase text-[#800020] mb-2 px-5">Tech Skills</p>
-      <h1 className="text-3xl font-semibold mb-4 px-5">Technologies I Use</h1>
+      <p className="text-xl uppercase text-[var(--pink-color)] mb-2 px-5">Tech Skills</p>
+      <h1 style={{ fontFamily: "Dancing Script, cursive" }} className="text-3xl mb-4 px-5 text-[var(--very-light-pink-color)] ">Technologies I Use</h1>
       <br />
       
       <Swiper
@@ -152,8 +152,7 @@ const TechSkills = () => {
               return (
               <div 
               key={arr?.technology}
-              className="w-full flex justify-between items-center
-              p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              className="w-full flex justify-between items-center text-[var(--background-color)] bg-[var(--very-light-pink-color)] p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
                 <span>{arr?.technology}</span>
                 <Image
                   src={arr?.icon}
@@ -171,7 +170,7 @@ const TechSkills = () => {
         ))}
         <br/>
         {/*arrows*/}
-        <div className='w-full flex justify-center mt-2'>
+        <div className='w-full flex justify-center mt-2 gap-1'>
           <button className={arrowButtonStyles} onClick={handlePrev}>
             <FaAngleLeft className={arrowIconStyles} />
           </button>
