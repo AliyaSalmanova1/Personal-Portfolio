@@ -14,10 +14,10 @@ import GameDev from "@/components/GameDev";
 
 export default function MyApp() {
   return (
-    <div className="MyApp flex flex-col items-center w-screen bg-[#000000]">
+    <div className="MyApp flex flex-col items-center w-full bg-[#000000]">
       <Navbar />
   
-      <main className="w-screen z-auto">
+      <main className="w-full z-auto">
         <Home />
         <GameDev />
         <ShowReel />

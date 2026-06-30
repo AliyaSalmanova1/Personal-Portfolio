@@ -14,8 +14,8 @@ const Home = () => {
     return (
      
         
-        <div className="w-screen min-h-screen flex flex-col  justify-center
-        mt-[-80px] pt-[160px]  0 relative max-w-[1300px] mx-auto
+        <div className="w-full min-h-screen flex flex-col justify-center
+        mt-[-80px] pt-[220px] md:pt-[160px] relative max-w-[1300px] mx-auto
         ">
             {/*flex container for text an image */}
             <div className="w-full md:mb-16
@@ -73,7 +73,7 @@ const Home = () => {
 
 
                 <div className="flex py-5 px-2" >
-                    <Link href='/#music' scroll={true} className="inline-block
+                    <Link href='/#gamedev' scroll={true} className="inline-block
                     rounded-full shadow-lg shadow-gray-400 p-4 h-30 w-30
                     hover:scale-110 ease-in duration-200 
                     mx-auto mt-5 bg-[var(--background-color)]" >

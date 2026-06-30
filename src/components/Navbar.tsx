@@ -29,9 +29,9 @@ const Navbar = () => {
 
 
     return (
-        <div className="w-screen relative flex ">
+        <div className="w-full relative flex ">
             
-            <nav className={`bg-[#000000] fixed z-[999] top-0 min-h-16 h-auto w-screen px-5 py-3
+            <nav className={`bg-[#000000] fixed z-[999] top-0 min-h-16 h-auto w-full px-5 py-3
              flex justify-center items-center shadow-xl shadow-gray-300 transition-shadow ease-in duration-300`}>
 
 
