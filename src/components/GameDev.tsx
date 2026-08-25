@@ -37,9 +37,9 @@ const GameDev = () => {
     },
     {
         title: "Potion Witch",
-        bgImage: "/projects/comingSoon.jpg",
+        bgImage: "/projects/potionwitch.png",
         projectUrl: "",
-        info: "Creating a narrative-driven puzzle game built on self-made game engine.",
+        info: "Created cozy-dark themed fantasy puzzle game built on self-made game engine.",
         viewText: ""
     },
     {
