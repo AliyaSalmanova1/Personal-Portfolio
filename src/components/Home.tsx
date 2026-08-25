@@ -36,7 +36,7 @@ const Home = () => {
                 
                 <div className="shrink-0" style={{ position: "relative", width: `${300}px`, height: `${300}px` }}>
                     <Image
-                        src="/profilePhotoNew2.png"
+                        src="/newprofilepic3.png"
                         alt="photo"
                         fill
                         className="rounded-full shrink-0 max-w-[300px] max-h-[300px] border-4 border-[var(--dark-pink-color)]"
