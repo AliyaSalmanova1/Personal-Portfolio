@@ -9,15 +9,17 @@ const GameDev = () => {
     const projectsInfo = [
         {
         title: "Holiday Dash",
-        bgImage: "/projects/holidayDash.png",
+        bgImage: "/projects/holidayDash2.png",
         projectUrl: "https://aliyasalmanova1.itch.io/holiday-dash",
-        info: "Solo developed holiday themed rhythm game in Unity.",
+        role: "Role: Solo Developer",
+        info: "Solo developed a holiday themed rhythm game in Unity.",
         viewText: "View On Itch.io"
     },
     {
         title: "Blade Dance",
         bgImage: "/projects/bladeDance.png",
         projectUrl: "https://christian-fitzpatrick.itch.io/blade-dance?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnX22eu-SIM2ifwGzlial0PkUWGh9Xa4l0g2VXlRqf87l-Sp8-4e8Q3fIYFw0_aem_xhlWCdKQfKsNk9AG-LagkAs",
+        role: "Role: Audio Programmer",
         info: "Refactored audio system in Unity/C# game to incorporate FMOD middleware.",
         viewText: "View On Itch.io"
     },
@@ -25,36 +27,41 @@ const GameDev = () => {
         title: "Do No Harm",
         bgImage: "/projects/donoharm.png",
         projectUrl: "https://store.steampowered.com/app/3138780/Do_No_Harm/",
-        info: "Found and edited sound effects for game, implemented the audio into Unity with other programmer, contributed to game creation ideas, wrote numerous pieces of the soundtrack.",
+        role: "Role: Composer, Sound Designer, Audio Programmer",
+        info: "Found and edited sound effects for game, collaborated to implement audio into Unity, contributed to game creation ideas, wrote numerous pieces of the soundtrack.",
         viewText: "View On Steam"
     },
     {
         title: "Lunar Ascendant",
         bgImage: "/projects/lunar.png",
         projectUrl: "https://store.steampowered.com/app/2547090/Lunar_Ascendant/",
-        info: "Refactored sound system to incorporate FMOD and made the audio system code modular and reusable (Unity and C#).",
+        role: "Role: Audio Programmer",
+        info: "Refactored sound system to incorporate FMOD and to make audio system code modular and reusable (Unity and C#).",
         viewText: "View On Steam"
     },
     {
         title: "Potion Witch",
         bgImage: "/projects/potionwitch.png",
-        projectUrl: "",
-        info: "Created cozy-dark themed fantasy puzzle game built on self-made game engine.",
-        viewText: ""
+        projectUrl: "https://aliyasalmanova1.itch.io/potion-witch",
+        role: "Role: Game Engine & Gameplay Developer",
+        info: "Created a cozy-dark themed fantasy puzzle game built on self-made game engine.",
+        viewText: "View On Itch.io"
     },
     {
-        title: "Bunny Game (to be renamed)",
-        bgImage: "/projects/comingSoon.jpg",
-        projectUrl: "",
-        info: "Working with a team to create a grotesque puzzle game in Unity. Roles: programmer, composer, sound designer.",
-        viewText: ""
+        title: "Standart Protocol (to be renamed)",
+        bgImage: "/projects/bunnyGame.jpeg",
+        projectUrl: "https://drive.google.com/drive/folders/1i84BDDdygjdJPp_q7eT_zK4822KNP-EP?usp=sharing",
+        role: "Role: Programmer, Composer, Sound Designer",
+        info: "Working with Monochromatic Studio to create a grotesque puzzle game in Unity.",
+        viewText: "Access Prototype From Google Drive"
     },
     {
-        title: "Fairy Game (to be renamed)",
+        title: "Midnight (to be renamed)",
         bgImage: "/projects/comingSoon.jpg",
         projectUrl: "",
-        info: "Solo developing a fairy-themed game in Unity with self-created assets.",
-        viewText: ""
+        role: "Role: Solo Developer",
+        info: "Solo developing a platformer game in Unity with self-created assets.",
+        viewText: "Not Yet Available"
     }
     
 ]
@@ -93,6 +100,9 @@ const GameDev = () => {
                     {/* Text block */}
                     <div className="p-4 flex flex-col gap-2">
                         <h2 className="text-lg font-semibold text-[var(--text-color)]">{projInfo.title}</h2>
+                        {projInfo.role && (
+                            <span className="text-sm  text-[var(--text-color)]">{projInfo.role}</span>
+                        )}
                         {projInfo.info && (
                             <span className="text-sm text-[var(--text-color)] opacity-80 leading-relaxed">{projInfo.info}</span>
                         )}
